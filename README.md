@@ -1,75 +1,66 @@
 # Prasanna K
 
-**M.A. Actuarial Economics @ Madras School of Economics | Quantitative Modeling, Markets & Statistical Research | Python**
+**M.A. Actuarial Economics @ Madras School of Economics | Quant Research • Trading Systems • Derivatives • Credit & Model Risk | Python • C++20**
 
-I build reproducible quantitative projects across market risk, causal inference, optimization, econometrics, model validation, credit risk and applied machine learning. My work emphasizes leakage control, strong baselines, out-of-sample validation, uncertainty, robustness checks, reproducibility and explicit limitations rather than headline metrics without context.
+I build reproducible quantitative research and engineering projects across market microstructure, trading systems, derivatives, credit and model validation. My work emphasizes leakage control, meaningful baselines, out-of-sample or holdout testing, deterministic evidence, adversarial diagnostics, reproducibility and explicit limitations rather than headline metrics without context.
 
-## Selected quantitative work
+## Flagship quantitative work
 
-### [Market Risk: VaR, Expected Shortfall, Stress & Limits](https://github.com/Prasanna-K-123/market-risk-var-es-stress-limits)
-Cross-asset market-risk research and monitoring framework using public historical factors, factor-sensitivity P&L, Historical/Parametric/Monte Carlo VaR and ES, EWMA covariance, rolling backtests, stress scenarios and risk limits.
+### [Quant Market Microstructure & Execution Research](https://github.com/Prasanna-K-123/quant-market-microstructure-research)
+Leakage-controlled short-horizon research on **2,419,200** official Binance 1-second observations across **28** SHA-256-verified daily archives, with chronological train/validation/final-test separation, execution lag, baseline challenges, bootstrap/regime checks and transaction-cost sensitivity.
 
-- 1,341 aligned daily factor observations and 1,090 rolling VaR forecasts
-- Historical 99% VaR: USD 1.285m; Historical 99% ES: USD 2.226m on the illustrative portfolio
-- Kupiec coverage p-value 0.0861; Christoffersen independence p-value 0.0015, retained as an adverse model-risk finding rather than hidden
+- Strongest held-out BTCUSDT 5s Ridge result: Pearson IC **0.02064**, Spearman IC **0.04445**, directional accuracy **52.68%**
+- Simple last-5s-return OLS baseline Pearson IC **0.02264** exceeds the multivariate Ridge result; the adverse complexity finding is retained
+- Strongest reported prediction-decile spread is only about **0.137 bps before friction**, so no deployable-alpha claim is made
 
-### [Causal Experimentation, Bootstrapping & Uplift Modeling](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift)
-Randomized-experiment analysis with treatment-effect estimation, multiplicity control, bootstrap uncertainty, honest train/validation/final-test model selection and uplift modeling.
+### [C++ Event-Driven Trading / Backtest Engine](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine)
+C++20 deterministic execution-systems project with price-time priority, marketable limits, market orders, intrusive per-price FIFO queues, live-order indexing, adversarial tests, ASan/UBSan, reproducible benchmarking and replay-only Callgrind profiling.
 
-- Hillstrom randomized-email experiment with 64,000 customers
-- 5,000 bootstrap resamples and Holm multiplicity correction
-- Final-test top-30% visit uplift exceeded the remainder by 4.53 percentage points; bootstrap 95% CI 1.50-7.52 pp
-- Negative spend-heterogeneity result preserved explicitly
+- Cancellation is **O(1) with respect to queue length after the order-ID hash lookup**
+- Frozen 1,000,000-event optimization sequence: **145.102 → 104.115 ns/event** and **140,001,502 → 100,873,271** replay instructions
+- Semantic replay outputs and the deep-state checksum remain identical across the accepted optimization sequence
 
-### [Urban Mobility Operations & Fleet Rebalancing Optimization](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization)
-Large-scale PySpark, geospatial and integer-optimization study using NYC TLC trip records.
+### [Derivatives Volatility Surface, Static Arbitrage & Hedging Model Risk](https://github.com/Prasanna-K-123/volatility-surface-model-risk)
+Timestamped Deribit BTC-options study with constrained raw-SVI calibration, alternating-strike holdouts, quadratic baseline challenge, observed-support static-arbitrage diagnostics, calendar checks and a separate controlled hedging model-risk experiment.
 
-- 24,083,384 raw trips processed; 22,974,942 retained after cleaning
-- Complete 129-weekday x 261-zone 6 PM panel to avoid zero-activity omission bias
-- Integer allocation covered all 1,382 modeled deficit vehicles and reduced proxy deadhead distance by 3.76% versus a distance-aware greedy benchmark
+- **978** raw option rows → **466** frozen-filter rows → **6** fitted expiries
+- Median SVI holdout RMSE **0.00017263** vs quadratic **0.00032092** total variance; SVI wins **4/6** expiries
+- **0** observed-support call-monotonicity, call-convexity or common-grid calendar violating points; negative identifiability evidence is retained explicitly
 
-### [Independent Model Risk Validation & Governance](https://github.com/Prasanna-K-123/model-risk-validation-governance)
-Independent-style validation of a separately built credit-risk PD model using pinned source evidence, metric recomputation, bootstrap uncertainty, calibration, challenger analysis, stability and sensitivity testing, findings management and a formal validation opinion.
+### [Leveraged Credit Underwriting, Debt Capacity & Downside Recovery](https://github.com/Prasanna-K-123/leveraged-credit-underwriting)
+SEC-source-traceable Carnival underwriting with annual/TTM operating reconstruction, carrying-value vs gross-principal debt reconciliation, maturity/refinancing exposure, downside leverage/coverage, debt-capacity grids and a deliberately simplified recovery sensitivity.
 
-- Primary ROC-AUC 0.7295 vs challenger 0.7529 on 200 pinned holdout observations
-- 5 open findings, including 2 high-severity findings
-- Final opinion: conditionally acceptable for research; not production-approved
+- Reconciled **$24,889m** carrying-value debt vs **$25,570m** gross-principal debt as distinct definitions
+- TTM EBITDA proxy **$7,327m**; gross-principal leverage **3.49x**; EBITDA/interest proxy **6.07x**
+- Severe stress reaches **5.62x** leverage and **3.01x** coverage; simplified 5x EV/EBITDA severe waterfall gives about **79.5%** to modeled unsecured debt without subsidiary guarantee
 
-### [Pricing & Customer Choice with Discrete Choice Modeling](https://github.com/Prasanna-K-123/pricing-customer-choice-discrete-choice)
-Econometric choice-modeling study using the EPFL/Biogeme Swissmetro benchmark with a direct multinomial-logit implementation, respondent-level holdout validation and price-sensitivity analysis.
+## Additional validated work
 
-- 6,768 usable choices from 752 respondents
-- Full-sample log likelihood -5331.252007 vs official Biogeme benchmark -5331.252000
-- Respondent-level holdout to avoid repeated-person leakage
-- Model-implied value of travel time: CHF 70.74/hour; own-fare arc elasticity around -0.45
-
-## Additional work
-
-- [Credit Risk, IFRS 9 & Stress Testing](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)
-- [Basel Credit Portfolio, Economic Capital & ICAAP](https://github.com/Prasanna-K-123/basel-credit-portfolio-icaap)
-- [Liquidity Risk, ILAAP & Recovery Planning](https://github.com/Prasanna-K-123/liquidity-risk-ilaap-recovery)
-- [Enterprise GenAI RAG Assistant - Retrieval, Evaluation & Responsible AI](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai)
+- [Market Risk: VaR, Expected Shortfall, Stress & Limits](https://github.com/Prasanna-K-123/market-risk-var-es-stress-limits) — cross-asset VaR/ES, EWMA covariance, rolling backtests, stress scenarios and limits, with adverse diagnostics retained.
+- [Independent Model Risk Validation & Governance](https://github.com/Prasanna-K-123/model-risk-validation-governance) — independent-style PD-model validation with recomputation, calibration, challenger testing, stability/sensitivity analysis and findings management.
+- [Causal Experimentation, Bootstrapping & Uplift Modeling](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift) — randomized-experiment analysis, bootstrap uncertainty, multiplicity control and honest final-test uplift modeling.
+- [Urban Mobility Operations & Fleet Rebalancing Optimization](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization) — PySpark/geospatial processing plus integer optimization on NYC TLC data.
 
 ## Technical toolkit
 
-**Python:** Pandas, NumPy, SciPy, scikit-learn, statsmodels, Matplotlib  
-**Data / computation:** SQL, DuckDB, PySpark / Spark SQL, PuLP  
-**Methods:** statistical modeling, simulation, optimization, causal inference, discrete choice, model validation, stress testing  
-**Engineering:** Git, GitHub, GitHub Actions, reproducible pipelines, automated tests
+**Programming / systems:** Python, C++20, SQL, CMake, Git, GitHub Actions  
+**Python / data:** Pandas, NumPy, SciPy, scikit-learn, statsmodels, DuckDB, PySpark / Spark SQL, Matplotlib, PuLP  
+**Quantitative methods:** statistical modeling, econometrics, simulation, optimization, causal inference, discrete choice, market/credit risk, model validation, stress testing  
+**Validation / performance:** unit and invariant testing, ASan/UBSan, deterministic replay, reproducible pipelines, profiling and benchmark design
 
 ## Working standard
 
-- Separate empirical evidence from synthetic or illustrative assumptions.
+- Separate reported fact, empirical evidence, simulation and analyst assumptions.
 - Preserve adverse diagnostics and negative results when they change the interpretation.
-- Use chronological or group-aware validation when random splitting would leak information.
-- Compare against meaningful baselines rather than intentionally weak ones.
-- Keep published claims traceable to code, data provenance and reproducible outputs.
+- Use chronological, group-aware or holdout validation when random splitting would leak information.
+- Challenge complex models against meaningful simple baselines.
+- Keep recruiter-facing claims traceable to code, source provenance and reproducible outputs.
 
 ## Background
 
-- **M.A. Actuarial Economics**, Madras School of Economics - expected Jun 2028
-- **B.Sc. Mathematics**, Loyola College - 2026
-- **Data Analyst Intern, Picklers Arena** - Excel-based booking-data cleaning, analysis and operational insights
+- **M.A. Actuarial Economics**, Madras School of Economics — expected Jun 2028
+- **B.Sc. Mathematics**, Loyola College — 2026
+- **Data Analyst Intern, Picklers Arena** — Excel-based booking-data cleaning, analysis and operational insights
 - Competitive debating and public speaking; multiple inter-collegiate awards
 
 ## Contact
