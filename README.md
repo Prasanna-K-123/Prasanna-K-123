@@ -6,13 +6,13 @@ I build source-traceable financial and quantitative research across M&A valuatio
 
 ## Flagship finance & quantitative work
 
-### [Baker Hughes / Chart M&A Valuation](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation)
-Independent public-information reconstruction of Baker Hughes' **$13.6bn** acquisition of Chart Industries using merger-proxy, SEC filing and issuer evidence.
+### [Baker Hughes / Chart M&A Valuation & Post-Close Equity Research](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation)
+Independent public-information research spanning Baker Hughes' **$13.6bn** Chart Industries acquisition and a dated post-close BKR investment thesis.
 
-- Triangulated the **$210/share** offer using trading comparables, precedent transactions and an independent DCF.
-- Independent DCF sensitivity: approximately **$165-$224/share** versus the disclosed fairness-opinion range of approximately **$171-$230/share**.
-- Built EV/equity, financing, **$325m** synergy and merger-consequence sensitivities; reported facts, derived values and analyst assumptions remain explicitly separated.
-- Excel work product includes a source register and formula QA; a separate Python reference layer reproduces the key valuation outputs with automated tests.
+- Reconstructed transaction economics and triangulated the **$210/share** offer using trading comparables, precedent transactions and an independent DCF.
+- Extended the work after close using September 2026 public disclosures into a core-BKR / Chart scenario framework covering integration, margins, leverage, catalysts and risks.
+- At the **11 Sep 2026 $59.06 close**, bear/base/bull targets were **$44.82 / $62.65 / $74.73** and probability-weighted fair value was **$61.22**; retained **HOLD / NEUTRAL** rather than forcing a positive recommendation.
+- Reported facts, management targets, derived values and analyst assumptions remain explicitly separated; no live-P&L, client-work or investment-authority claim is made.
 
 ### [Leveraged Credit Underwriting, Debt Capacity & Downside Recovery](https://github.com/Prasanna-K-123/leveraged-credit-underwriting)
 SEC-source-traceable Carnival underwriting with operating reconstruction, debt reconciliation, maturity/refinancing exposure, downside leverage/coverage, debt-capacity grids and simplified recovery sensitivity.
