@@ -26,3 +26,9 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m pytest -q
       - run: python -m src.model
+      - run: python -m src.build_excel
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Employee_Benefits_Actuarial_Model
+          path: workforce-solutions-actuarial-analytics/Employee_Benefits_Actuarial_Model.xlsx
+          if-no-files-found: error
