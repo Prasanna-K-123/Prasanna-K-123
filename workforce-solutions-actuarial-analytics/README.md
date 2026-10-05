@@ -1,5 +1,7 @@
 # Employee Benefits Actuarial Analytics - Retirement + Health & Welfare
 
+> **Current canonical project:** [Employee Benefits Actuarial Analytics](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics). It preserves this model and its headline results, adds a direct workbook download and workbook recalculation checks, and corrects workbook presentation/control gaps. This original folder and its history remain available as provenance.
+
 [![Employee Benefits Actuarial CI](https://github.com/Prasanna-K-123/Prasanna-K-123/actions/workflows/employee-benefits-actuarial-ci.yml/badge.svg)](https://github.com/Prasanna-K-123/Prasanna-K-123/actions/workflows/employee-benefits-actuarial-ci.yml)
 
 A compact, reproducible **educational employee-benefits actuarial model** built to demonstrate the mechanics behind retirement liability analysis and health-claims reserving without presenting synthetic work as client or industry experience.
@@ -53,7 +55,7 @@ python -m src.model
 python -m pytest -q
 ```
 
-Current release: **8/8 tests pass**. GitHub Actions CI is green and produces a downloadable Excel workbook artifact.
+The original release has eight Python controls. See the CI badge for its status; use the canonical repository above for the updated workbook and workbook verification.
 
 ## Repository map
 
