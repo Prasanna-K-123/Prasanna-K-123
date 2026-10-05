@@ -1,5 +1,7 @@
 # Employee Benefits Actuarial Analytics - Retirement + Health & Welfare
 
+[![Employee Benefits Actuarial CI](https://github.com/Prasanna-K-123/Prasanna-K-123/actions/workflows/employee-benefits-actuarial-ci.yml/badge.svg)](https://github.com/Prasanna-K-123/Prasanna-K-123/actions/workflows/employee-benefits-actuarial-ci.yml)
+
 A compact, reproducible **educational employee-benefits actuarial model** built to demonstrate the mechanics behind retirement liability analysis and health-claims reserving without presenting synthetic work as client or industry experience.
 
 ## Headline evidence
