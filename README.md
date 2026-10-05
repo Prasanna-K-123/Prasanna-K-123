@@ -6,7 +6,7 @@ I build source-traceable analytical work around employee benefits, actuarial/sta
 
 ## Employee benefits actuarial analytics
 
-### [Retirement + Health & Welfare Actuarial Analytics](https://github.com/Prasanna-K-123/Prasanna-K-123/tree/main/workforce-solutions-actuarial-analytics)
+### [Retirement + Health & Welfare Actuarial Analytics](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics)
 
 Educational synthetic-data project built around retirement and health & welfare actuarial mechanics.
 
