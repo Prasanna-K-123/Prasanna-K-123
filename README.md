@@ -11,7 +11,7 @@ Educational synthetic-data project designed around employee-benefits actuarial m
 
 - **Retirement:** 180 synthetic employees; base defined-benefit liability proxy **$25.27m** at a 5% discount rate, with **$30.37m at 4%** and **$21.21m at 6%**.
 - **Health & welfare:** synthetic 12x12 paid-claims triangle; estimated ultimate claims **$14.81m**, chain-ladder **IBNR $3.06m**, and illustrative reserve-with-PAD proxy **$3.22m**.
-- Includes cash-flow forecasting, discount / salary-growth sensitivity, claim-trend sensitivity, a public workbook-formula map, independent Python calculations and **5/5 passing automated controls**.
+- Includes cash-flow forecasting, discount / salary-growth sensitivity, claim-trend sensitivity, a public workbook-formula map, independent Python calculations and **8/8 passing automated controls**.
 - Explicit boundary: educational portfolio work only - not PwC/client work, a booked reserve, a qualified pension valuation or actuarial-industry tenure.
 
 ### [Customer Churn Survival Analysis](https://github.com/Prasanna-K-123/customer-churn-survival-analysis)
