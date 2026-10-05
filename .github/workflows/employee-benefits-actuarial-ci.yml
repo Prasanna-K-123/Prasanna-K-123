@@ -1,0 +1,28 @@
+name: Employee Benefits Actuarial CI
+
+on:
+  push:
+    paths:
+      - "workforce-solutions-actuarial-analytics/**"
+      - ".github/workflows/employee-benefits-actuarial-ci.yml"
+  pull_request:
+    paths:
+      - "workforce-solutions-actuarial-analytics/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: workforce-solutions-actuarial-analytics
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: workforce-solutions-actuarial-analytics/requirements.txt
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - run: python -m src.model
