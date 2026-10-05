@@ -26,6 +26,7 @@ A compact, reproducible **educational employee-benefits actuarial model** built 
 The primary business-facing work product is a formula-driven Excel model. The workbook is rebuilt from source on every green CI run and published as the **Employee_Benefits_Actuarial_Model** workflow artifact. The repository also exposes the [Excel workbook builder](src/build_excel.py), [workbook formula map](docs/WORKBOOK_FORMULA_MAP.md), independent Python calculation layer, automated tests and structured output evidence, so the modeling logic and headline numbers remain reviewable.
 
 Public evidence:
+- [Excel workbook builder](src/build_excel.py)
 - [summary outputs](outputs/summary.json)
 - [retirement sensitivity](outputs/pension_sensitivity.csv)
 - [15-year benefit-start cash-flow forecast](outputs/pension_cashflow_forecast.csv)
@@ -57,7 +58,8 @@ Current release: **8/8 tests pass**. GitHub Actions CI is green and produces a d
 ## Repository map
 
 ```text
-src/model.py                               independent Python calculation layer\nsrc/build_excel.py                         reproducible formula-driven Excel builder
+src/model.py                               independent Python calculation layer
+src/build_excel.py                         reproducible formula-driven Excel builder
 tests/test_model.py                        automated controls
 outputs/                                   reproducible sensitivities and summaries
 docs/METHODOLOGY_AND_LIMITATIONS.md        model boundary and exclusions
