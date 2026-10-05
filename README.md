@@ -47,7 +47,7 @@ Cleaned and analyzed **1.07m retail transactions** with Python and DuckDB SQL, b
 ## Background
 
 - **M.A. Actuarial Economics**, Madras School of Economics - Aug 2026 to expected Jun 2028
-- **B.Sc. Mathematics**, Loyola College - First Class, CGPA 6.46/10
+- **B.Sc. Mathematics**, Loyola College - First Class
 - **Data Analyst Intern, Picklers Arena** - Excel-based booking-data cleaning, analysis and operational insights
 - **Cultural Secretary**, Department of Mathematics, Loyola College; 15+ prizes across 20+ inter-collegiate debate/oratory competitions
 
