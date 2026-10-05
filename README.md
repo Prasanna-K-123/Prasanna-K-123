@@ -72,4 +72,4 @@ Timestamped Deribit BTC-options study with constrained raw-SVI calibration, hold
 
 ## Contact
 
-[Email](mailto:prasannak0911@gmail.com) | [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384) | [GitHub](https://github.com/Prasanna-K-123)
+[Email](mailto:ae26prasanna@mse.ac.in) | [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384) | [GitHub](https://github.com/Prasanna-K-123)
