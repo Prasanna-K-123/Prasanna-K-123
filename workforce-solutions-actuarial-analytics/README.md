@@ -29,6 +29,7 @@ Public evidence:
 - [health claims sensitivity](outputs/health_claims_sensitivity.csv)
 - [methodology and limitations](docs/METHODOLOGY_AND_LIMITATIONS.md)
 - [workbook formula map](docs/WORKBOOK_FORMULA_MAP.md)
+- [model review / decision interpretation](docs/MODEL_REVIEW.md)
 
 ## Python validation layer
 
@@ -48,7 +49,7 @@ python -m src.model
 python -m pytest -q
 ```
 
-Current release: **5/5 tests pass**.
+Current release: **8/8 tests pass**. GitHub Actions CI is green on the public repository.
 
 ## Repository map
 
