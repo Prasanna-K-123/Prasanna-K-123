@@ -1,0 +1,99 @@
+{
+  "evidence_date": "2026-10-09",
+  "guide_updated": "2026-10-10 Asia/Colombo",
+  "identity": "Quantitative modelling & reliable decision systems",
+  "scope": "Independent, AI-assisted portfolio research; no client deployment or institutional endorsement.",
+  "projects": [
+    {
+      "id": 1,
+      "repo": "credit-risk-ifrs9-stress-testing",
+      "title": "Credit Risk & Lending Decisions",
+      "evidence_commit": "9829cfa2cfb157a862725bfb761b3841d30bfc4f",
+      "ci_run_id": 37966462945,
+      "ci_url": "https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/actions/runs/37966462945",
+      "result_path": "outputs/decision_audit/summary.json",
+      "verification_path": "audit_reference.py",
+      "workflow_path": ".github/workflows/ci.yml",
+      "interpretation": "AUC difference 0.023; paired 95% interval −0.014 to 0.061. The challenger is not established as superior. Frozen lending policy and prior-shift assumptions are auditable.",
+      "limit": "Small historical oversampled dataset, no observation dates; IFRS 9/LGD/EAD assumptions are illustrative."
+    },
+    {
+      "id": 2,
+      "repo": "causal-marketing-experimentation-uplift",
+      "title": "Causal Decision Science",
+      "evidence_commit": "96e8b7c497c82dc6c2f6c458c20e7060c47f696e",
+      "ci_run_id": 37966591692,
+      "ci_url": "https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/actions/runs/37966591692",
+      "result_path": "results/same_budget_policy_audit.json",
+      "verification_path": "audit_policy.py",
+      "workflow_path": ".github/workflows/reproduce-evidence.yml",
+      "interpretation": "Same-budget targeting gain 0.946 percentage points; conditional 95% interval 0.333–1.561 points. The negative spend-targeting finding remains visible.",
+      "limit": "Public retrospective evaluation; uncertainty is conditional on the fitted ranking. No profit or individual-treatment-effect claim."
+    },
+    {
+      "id": 3,
+      "repo": "enterprise-genai-rag-responsible-ai",
+      "title": "Financial AI Evidence Systems",
+      "evidence_commit": "88227013ccb1459b57366f2d8d21eea7ed57771a",
+      "ci_run_id": 37966606959,
+      "ci_url": "https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/37966606959",
+      "result_path": "results/finqa_retrieval/summary.json",
+      "verification_path": "benchmark_finqa_retrieval.py",
+      "workflow_path": ".github/workflows/evidence-validation.yml",
+      "interpretation": "Across 883 FinQA development questions, TF-IDF recovered all labelled evidence at three for 61.38%; BM25 reached 57.98% and RRF 58.89%. Numerical controls separately cover 33 reconciliations and seven unsupported-request cases.",
+      "limit": "FinQA evaluation measures within-report retrieval, not end-to-end answer accuracy. The original small-model RAG study remains separately documented."
+    },
+    {
+      "id": 4,
+      "repo": "employee-benefits-actuarial-analytics",
+      "title": "Actuarial Risk Modelling",
+      "evidence_commit": "f5ddbc1093e23e5cfb973a92ca77d527a9d6f2a4",
+      "ci_run_id": 37966483129,
+      "ci_url": "https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/37966483129",
+      "result_path": "outputs/stochastic_reserving/summary.json",
+      "verification_path": "src/stochastic_reserving.py",
+      "workflow_path": ".github/workflows/employee-benefits-actuarial-ci.yml",
+      "interpretation": "Nine published rounded Mack standard errors reconcile within one unit. On 22 later-diagonal forecasts, MAE is 1,885.21 versus 3,425.45 for no development. The benefits workbook and reserving benchmark use different data.",
+      "limit": "RAA is a historical reinsurance benchmark, not health-client data. Benefits valuation uses synthetic proxies and is not an IAS 19/ASC 715 valuation."
+    },
+    {
+      "id": 5,
+      "repo": "volatility-surface-model-risk",
+      "title": "Derivatives & Hedging Model Risk",
+      "evidence_commit": "328bef7988905d5329523fce2c501c0c4ae85261",
+      "ci_run_id": 37966502252,
+      "ci_url": "https://github.com/Prasanna-K-123/volatility-surface-model-risk/actions/runs/37966502252",
+      "result_path": "reference/cost_aware_hedging/scenarios.csv",
+      "verification_path": "verify_reference.py",
+      "workflow_path": ".github/workflows/validation.yml",
+      "interpretation": "466 filtered option observations across six expiries support held-strike baseline comparisons. The hedge extension covers 27 cost/frequency/volatility scenarios on 3,000 common simulated paths, including terminal liquidation costs.",
+      "limit": "One historical crypto-option snapshot and controlled GBM simulation; no global arbitrage-free or profitable-trading claim."
+    },
+    {
+      "id": 6,
+      "repo": "cpp-event-driven-trading-engine",
+      "title": "C++20 Event-Driven Trading Engine",
+      "evidence_commit": "9dcc7a5b9418c78472454ba54340715da1d3a279",
+      "ci_run_id": 37966512460,
+      "ci_url": "https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/actions/runs/37966512460",
+      "result_path": "reference/performance_validation.json",
+      "verification_path": "tests/test_differential.cpp",
+      "workflow_path": ".github/workflows/validation.yml",
+      "interpretation": "A separate vector-based matcher checks 25,000 randomized events across five seeds, every fill and all 256 order-ID slots after each event. Historical timing claims retain their machine and workload identity.",
+      "limit": "Synthetic replay and platform-specific historical benchmark; not live exchange latency or production trading."
+    },
+    {
+      "id": 7,
+      "repo": "urban-mobility-pyspark-optimization",
+      "title": "Data Engineering & Decision Optimisation",
+      "evidence_commit": "9260ef04775a5a9e4311f06453c40de4c6c9d636",
+      "ci_run_id": 37963818458,
+      "ci_url": "https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/actions/runs/37963818458",
+      "result_path": "results/project5_metrics.csv",
+      "verification_path": "results/transport_verification.json",
+      "workflow_path": ".github/workflows/reproduce-tlc.yml",
+      "interpretation": "24.08 million raw taxi trips were reprocessed into a complete zone panel. Modelled proxy vehicle-miles fell 3.76% versus a distance-aware greedy baseline. The transport core has 100 offline correctness cases, including 40 exhaustive comparisons.",
+      "limit": "TLC trip flow does not observe idle fleet supply; centroid distance is a proxy, and allocation is a static model."
+    }
+  ]
+}

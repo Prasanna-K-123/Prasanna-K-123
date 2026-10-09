@@ -20,6 +20,8 @@ I work on research prototypes that connect statistical models, financial decisio
 
 ## How to review the work
 
+**[Open the direct evidence guide](portfolio/EVIDENCE.md)** — results, verification code and successful reproduction runs for all seven, with the interpretation limits beside each result.
+
 Start with a repository’s evidence release and `docs/EVIDENCE_REVIEW.md`, then inspect the source data, benchmark comparison and reproducibility checks. The portfolio retains negative findings, including uncertain credit-model superiority, a failed spend-targeting result and a financial-retrieval study where the simple baseline wins.
 
 Public-data studies, simulations and synthetic workbook demonstrations are labelled explicitly. These projects are independently initiated portfolio work developed with AI assistance; they are not client engagements, production deployments or institutional endorsements. Historical benchmark timings are tied to their recorded platform and workload.
