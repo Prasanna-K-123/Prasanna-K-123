@@ -1,56 +1,37 @@
 # Prasanna K
 
-**M.A. Actuarial Economics @ Madras School of Economics | Employee Benefits Actuarial Analytics • Model Validation • Decision Analytics | Excel • Python • SQL**
+**Quantitative modelling & reliable decision systems**
 
-I build source-traceable analytical work around employee benefits, actuarial/statistical modeling, model validation and decision support. My current employee-benefits work covers retirement liability proxies, benefit cash-flow forecasting, health claims development / IBNR, PAD / risk-margin, assumption sensitivity and transparent model controls.
+M.A. Actuarial Economics student at **Madras School of Economics**; B.Sc. Mathematics, **Loyola College**. Seeking **Summer 2027** internships in quantitative risk, financial modelling and applied AI/data science. Available full-time in June–July, with flexibility from late May to early August.
 
-## Employee benefits actuarial analytics
+I work on research prototypes that connect statistical models, financial decisions and reliable software. The portfolio below has exactly seven selected flagships. Each exposes code, evidence, reproduction instructions and the limits of its conclusions.
 
-### [Retirement + Health & Welfare Actuarial Analytics](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics)
+## Seven selected flagships
 
-Educational synthetic-data project built around retirement and health & welfare actuarial mechanics.
+| Project | Evidence to inspect |
+|---|---|
+| **1. [Credit Risk & Lending Decisions](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)** | 1,000 corrected UCI observations; 200-row holdout; paired model uncertainty and a frozen lending-policy audit. |
+| **2. [Causal Decision Science](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift)** | 64,000 randomized customers; reconciled 12,800-row evaluation; same-budget targeting gain 0.946 percentage points, conditional 95% CI [0.333, 1.561]. |
+| **3. [Financial AI Evidence Systems](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai)** | 883 FinQA development questions; 3 retrievers; 33 numerical reconciliations and 7 unsupported-request controls. |
+| **4. [Actuarial Risk Modelling](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics)** | Published RAA triangle; independently reproduced 9 rounded Mack standard errors; 22 later-diagonal forecasts; Excel/Python benefits model. |
+| **5. [Derivatives & Hedging Model Risk](https://github.com/Prasanna-K-123/volatility-surface-model-risk)** | 466 filtered BTC option observations, 6 expiries; 27 common-path hedge/cost/volatility scenarios across 3,000 simulated paths. |
+| **6. [C++20 Event-Driven Trading Engine](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine)** | 25,000 randomized events; 5 seeds; every fill and all 256 order-ID slots checked against an independent vector-based oracle. |
+| **7. [Data Engineering & Decision Optimisation](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization)** | 24.08m raw TLC trips; complete zero-inclusive zone panel; 100 offline transport cases including 40 exhaustive oracle comparisons. |
 
-- **Retirement:** 180 synthetic employees; base defined-benefit liability proxy **$25.27m** at a 5% discount rate, with **$30.37m at 4%** and **$21.21m at 6%**; includes salary-growth sensitivity, 15-year benefit-start cash flows and an illustrative lump-sum cashout / de-risking scenario.
-- **Health & welfare:** synthetic 12x12 paid-claims development triangle; estimated ultimate claims **$14.81m**, chain-ladder **IBNR $3.06m**, and reserve-with-PAD proxy **$3.22m**; includes 5% / 7% / 9% claim-trend sensitivity.
-- Formula-driven Excel workbook is rebuilt from source on green CI runs; independent Python calculations and **8/8 automated controls** provide a second validation layer.
-- Explicit boundary: educational portfolio work only - not PwC/client work, a booked reserve, a qualified pension valuation or actuarial-industry tenure.
+## How to review the work
 
-### [Customer Churn Survival Analysis](https://github.com/Prasanna-K-123/customer-churn-survival-analysis)
+Start with a repository’s evidence release and `docs/EVIDENCE_REVIEW.md`, then inspect the source data, benchmark comparison and reproducibility checks. The portfolio retains negative findings, including uncertain credit-model superiority, a failed spend-targeting result and a financial-retrieval study where the simple baseline wins.
 
-Time-to-event modeling on **7,032** customers using Kaplan-Meier estimation, log-rank testing and a penalized Cox proportional-hazards model with right-censoring; Cox concordance index **0.826**.
-
-### [Independent Model Risk Validation & Governance](https://github.com/Prasanna-K-123/model-risk-validation-governance)
-
-Independent-style validation of a public-data credit model with recomputed discrimination, calibration and stability diagnostics, challenger comparison, documented findings and a research-only conditional opinion.
-
-### [Customer Analytics, Segmentation & Revenue Forecasting](https://github.com/Prasanna-K-123/retail-customer-analytics-forecasting)
-
-Cleaned and analyzed **1.07m retail transactions** with Python and DuckDB SQL, built RFM segmentation and a 28-day forecasting holdout, and retained the simpler seasonal-naive model when it outperformed Holt-Winters by **14.7% on MAE**.
-
-## Additional validated analytical work
-
-- [Credit Risk / IFRS 9 Stress Testing](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)
-- [Causal Experimentation & Uplift Modeling](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift)
-- [Pricing & Customer Choice / Discrete Choice](https://github.com/Prasanna-K-123/pricing-customer-choice-discrete-choice)
-- [Market Risk: VaR, Expected Shortfall, Stress & Limits](https://github.com/Prasanna-K-123/market-risk-var-es-stress-limits)
-- [Baker Hughes / Chart M&A Valuation & Equity Research](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation)
-- [Leveraged Credit Underwriting & Downside Recovery](https://github.com/Prasanna-K-123/leveraged-credit-underwriting)
-- [Quant Market Microstructure Research](https://github.com/Prasanna-K-123/quant-market-microstructure-research)
-- [C++ Event-Driven Trading / Backtest Engine](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine)
-
-## Toolkit
-
-**Employee benefits / analytics:** liability and cash-flow modeling, claims development / IBNR, PAD / risk-margin, sensitivity testing, survival analysis, stress testing, model validation, assumption governance  
-**Programming / data:** Excel, Python, SQL, Pandas, NumPy, SciPy, scikit-learn, DuckDB, Git / GitHub Actions  
-**Working standard:** separate facts from assumptions; challenge complex methods against simple baselines; retain adverse diagnostics; keep recruiter-facing claims traceable to code, sources and reproducible outputs.
+Public-data studies, simulations and synthetic workbook demonstrations are labelled explicitly. These projects are independently initiated portfolio work developed with AI assistance; they are not client engagements, production deployments or institutional endorsements. Historical benchmark timings are tied to their recorded platform and workload.
 
 ## Background
 
-- **M.A. Actuarial Economics**, Madras School of Economics - Aug 2026 to expected Jun 2028
-- **B.Sc. Mathematics**, Loyola College - First Class
-- **Data Analyst Intern, Picklers Arena** - Excel-based booking-data cleaning, analysis and operational insights
-- **Cultural Secretary**, Department of Mathematics, Loyola College; 15+ prizes across 20+ inter-collegiate debate/oratory competitions
+- **M.A. Actuarial Economics**, Madras School of Economics — expected 2028.
+- **B.Sc. Mathematics**, Loyola College — First Class, 2026.
+- **Data Analyst Intern, Picklers Arena**, Dec 2025–Jan 2026 — Excel analysis of six months of booking data using PivotTables, XLOOKUP and operating summaries.
+- **Cultural Secretary**, Loyola Mathematics Department, 2025–26 — student, faculty and sponsor coordination.
+- **15+ prizes across 20+ debate/oratory competitions**, including Ministry of Education oration, VIT Chennai parliamentary debate and Stella Maris linear-algebra paper-presentation first prizes in 2025.
 
-## Contact
+**Project tools:** Python, SQL, C++20, Excel, PySpark and GitHub Actions.
 
-[Email](mailto:ae26prasanna@mse.ac.in) | [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384) | [GitHub](https://github.com/Prasanna-K-123)
+**Contact:** ae26prasanna@mse.ac.in · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/)
