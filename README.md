@@ -16,7 +16,7 @@ I work on research prototypes that connect statistical models, financial decisio
 | **4. [Actuarial Risk Modelling](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics)** | Published RAA triangle; independently reproduced 9 rounded Mack standard errors; 22 later-diagonal forecasts; Excel/Python benefits model. |
 | **5. [Derivatives & Hedging Model Risk](https://github.com/Prasanna-K-123/volatility-surface-model-risk)** | 466 filtered BTC option observations, 6 expiries; 27 common-path hedge/cost/volatility scenarios across 3,000 simulated paths. |
 | **6. [C++20 Event-Driven Trading Engine](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine)** | 25,000-event independent matching oracle; another 25,000-event recovery study with 685 restores, 1,304 bit-flip/163 truncation refusals; independent portable-format decoder. |
-| **7. [Data Engineering & Decision Optimisation](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization)** | 24.08m-trip PySpark study and independent optimization oracles; later-period 6,003 July zone-days from 3.90m additional raw trips; frozen mean MAE 5.79 versus zero baseline 12.40. |
+| **7. [Data Engineering & Decision Optimisation](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization)** | 24.08m-trip PySpark/optimisation study; registered 17,226 Aug-Oct 2025 zone-days: boosting MAE 5.40 vs 5.68 for a July-selected weekday baseline. Assumed daily access; 21/66 loss days retained. |
 
 ## How to review the work
 
