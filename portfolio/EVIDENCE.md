@@ -82,6 +82,18 @@ Jan-June flow means were frozen before processing July. July contributes 3,898,9
 
 [Earlier review](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/87ff32d9a40fde4bdf948e89b04ec649ba6b758e/docs/FORWARD_PERIOD_REVIEW.md) · [Earlier result](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/87ff32d9a40fde4bdf948e89b04ec649ba6b758e/reference/forward_panel/summary.json) · [Earlier successful CI](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/actions/runs/38021636353)
 
+### 2. Causal Decision Science — refit and selection challenged
+
+The original fixed-model +0.946 pp visit-gain estimate is reproduced exactly. Repeating the two-family validation choice and final refit in **256 paired customer draws**, at the same 30% budget, yields visit-gain 2.5th/97.5th percentiles **[-0.252, +1.262] pp**, median **+0.630 pp**, with **16/256** nonpositive draws. Logistic is chosen 143 times and boosting 113. Spend-gain percentiles **[-$0.279, +$0.172]** span zero; no revenue/profit advantage is validated.
+
+[Complete methods/comparison](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/docs/REFIT_UNCERTAINTY_REVIEW.md) · [Registered protocol](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/reference/refit_uncertainty/PROTOCOL.json) · [All 256 records](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/reference/refit_uncertainty/replicates.csv) · [Summary and Monte Carlo precision](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/reference/refit_uncertainty/summary.json) · [Successful exact-head replay](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/actions/runs/38073180587)
+
+The source remains **64,000** records from the inspected 2008 experiment with fixed **38,400/12,800/12,800** roles. Customer resampling retains the three randomized arm counts and whole records; duplicates are kept without a usable customer identifier. Every candidate choice uses validation visits; evaluation never selects a model, budget or feature. A registered known-design 50:50 email-mixture value check also crosses zero. Median target-set Jaccard against the original policy is **0.527**, showing substantial policy instability.
+
+**Interpretation:** Empirical sensitivity ranges condition on this experiment, fixed split, candidate menu, algorithm seed and independent-customer assumption. Coverage after discontinuous selection is not established; this is not a new untouched trial or an individual treatment-effect estimate. New campaign confirmation and treatment-specific learning remain open. Do not replace the full range with a more favourable conditional-only interval.
+
+**Reproduction:** 21 tests plus pinned-source reconstruction, all 256 policy/draw metrics, all 4,096 conditional draws and registered refit IDs 0/85/170/255 pass locally and in exact-head CI. Only four full refits are replayed in CI; the study itself ran all 256. Cross-hardware score byte hashes can differ; registered policy memberships match exactly and numerical metric tolerances pass. Historical fixed-model results below remain preserved.
+
 ## Earlier frozen evidence
 
 ## 1. [Credit Risk & Lending Decisions](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)
