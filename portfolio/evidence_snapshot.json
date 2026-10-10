@@ -1,6 +1,6 @@
 {
   "evidence_date": "2026-10-09",
-  "guide_updated": "2026-10-10 Asia/Colombo",
+  "guide_updated": "2026-10-10",
   "identity": "Quantitative modelling & reliable decision systems",
   "scope": "Independent, AI-assisted portfolio research; no client deployment or institutional endorsement.",
   "projects": [
@@ -94,6 +94,23 @@
       "workflow_path": ".github/workflows/reproduce-tlc.yml",
       "interpretation": "24.08 million raw taxi trips were reprocessed into a complete zone panel. Modelled proxy vehicle-miles fell 3.76% versus a distance-aware greedy baseline. The transport core has 100 offline correctness cases, including 40 exhaustive comparisons.",
       "limit": "TLC trip flow does not observe idle fleet supply; centroid distance is a proxy, and allocation is a static model."
+    }
+  ],
+  "updates": [
+    {
+      "date": "2026-10-10",
+      "project_id": 5,
+      "source_commit": "fd9c3ff268f8c03cf742b580981548ebab06f08f",
+      "ci_run": 38013024452,
+      "ci_conclusion": "success",
+      "observed_density_failures": 0,
+      "stress_density_failing_slices": 2,
+      "total_slices": 6,
+      "stress_calendar_failing_pairs": 2,
+      "total_pairs": 5,
+      "held_out_boundary_extrapolation_strikes": 3,
+      "held_out_total_strikes": 116,
+      "scope": "Frozen-parameter finite-grid model diagnostics; new explicit support guard; not executable market arbitrage or a global proof."
     }
   ]
 }

@@ -12,6 +12,10 @@ This guide links directly to the published results, verification and reproductio
 
 The links below freeze the October 9 evidence snapshot. Each linked CI run completed successfully within its documented scope; a passing workflow does not establish production readiness or eliminate model risk. Current repository documentation may have newer clarification commits.
 
+## October 10 update: extrapolation challenged
+
+The October 9 snapshot below remains reproducible. Project 5 now also has an [analytic extrapolation audit](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/fd9c3ff268f8c03cf742b580981548ebab06f08f/docs/EXTRAPOLATION_AUDIT.md), [frozen result/protocol](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/fd9c3ff268f8c03cf742b580981548ebab06f08f/reference/density_audit/summary.json) and [successful validation run](https://github.com/Prasanna-K-123/volatility-surface-model-risk/actions/runs/38013024452). Two of six smiles fail a far-outside-support density stress check; the new bounded-evaluation API rejects unsupported extrapolation. The original held-out-strike benchmark includes three boundary-extrapolation points out of 116. These are model-risk findings, not observed executable market arbitrage or a global no-arbitrage proof.
+
 ## 1. [Credit Risk & Lending Decisions](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)
 
 AUC difference 0.023; paired 95% interval −0.014 to 0.061. The challenger is not established as superior. Frozen lending policy and prior-shift assumptions are auditable.
