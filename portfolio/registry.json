@@ -46,12 +46,12 @@
     "repo": "enterprise-genai-rag-responsible-ai",
     "title": "Financial AI Evidence Systems",
     "focus": "Applied AI, retrieval evaluation and reliable numerical tools",
-    "evidence": "883-question FinQA retrieval comparison; 33 financial reconciliations and seven refusal controls; completed actual Qwen3-4B output audit on 128 frozen public-test questions.",
+    "evidence": "883-question retrieval benchmark; 39 registered facts reconciled to SEC companyfacts/inline XBRL; 33 calculator checks and 7 refusals; two frozen model-answer audits (128 and 64 questions).",
     "bullets": [
       "Benchmarked TF-IDF, BM25 and reciprocal-rank fusion on 883 FinQA development questions; TF-IDF retrieved all labelled evidence in the top three for 61.4%, with per-question outputs and pinned source identity.",
-      "Built a source-linked financial calculator with 33 reconciliations and 7 refusal controls; audited actual Qwen3-4B outputs on 128 frozen questions, exposing arithmetic, source-selection and answer-scale failures."
+      "Reconciled 39 financial data records across SEC companyfacts and inline XBRL; checked 33 calculations and 7 refusal controls. Audited model answers on frozen sets of 128 and 64 questions, retaining source, unit and arithmetic failures."
     ],
-    "limit": "Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment.",
+    "limit": "Explicit historical calculator only. General model answers remain unreliable; exact source addresses and reference-match diagnostics do not prove semantic correctness. Controlled-language v2 has sparse, post-hoc development evidence.",
     "prior_evidence": [
       {
         "evidence": "883 FinQA development questions; 3 retrievers; 33 numerical reconciliations and 7 unsupported-request controls.",
@@ -64,12 +64,24 @@
     ],
     "latest_evidence_release": {
       "date": "2026-10-10",
-      "source_commit": "1a256dfe20a4ac13f29e9bf662459b31da42dd19",
-      "ci_run_id": 38021106315,
-      "audit_path": "docs/ANSWER_AUDIT.md",
-      "result_path": "reference/answer_audit/summary.json",
-      "scope": "Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment."
-    }
+      "source_commit": "a0368d045e2b403ca9185b168557eda831922059",
+      "ci_run_id": 38049135102,
+      "audit_path": "docs/GROUNDED_ANSWER_AUDIT.md",
+      "result_path": "reference/grounded_answer_audit/summary.json",
+      "lineage_path": "docs/FILING_LINEAGE.md",
+      "development_path": "docs/CONTROLLED_CONTRACT_V2.md",
+      "scope": "Explicit historical calculator only. General model answers remain unreliable; exact source addresses and reference-match diagnostics do not prove semantic correctness. Controlled-language v2 has sparse, post-hoc development evidence."
+    },
+    "previous_evidence_releases": [
+      {
+        "date": "2026-10-10",
+        "source_commit": "1a256dfe20a4ac13f29e9bf662459b31da42dd19",
+        "ci_run_id": 38021106315,
+        "audit_path": "docs/ANSWER_AUDIT.md",
+        "result_path": "reference/answer_audit/summary.json",
+        "scope": "Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment."
+      }
+    ]
   },
   {
     "id": 4,

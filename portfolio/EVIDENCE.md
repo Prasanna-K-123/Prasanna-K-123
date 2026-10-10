@@ -36,6 +36,16 @@ Qwen3-4B Q4_K_M actually generated all 128 preselected public-test outputs. The 
 
 **Limit:** Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment.
 
+#### Current source-grounding extension
+
+The explicit historical calculator now requires reconciled provenance: **39 registered rows / 33 distinct concept-period contexts** match SEC companyfacts and inline XBRL from two issuer filings. Original values and capture hashes are preserved; current HTML hashes differ from earlier captures. This is consistency across representations of the same disclosures, not an independent financial audit.
+
+A separate Qwen3-8B pilot generated all **64 fixed questions / 59 pages**, excluding every earlier-audit page. Source-addressed execution gives **16/64 scalar execution-reference matches**, versus **2/64** direct; the strict v1 policy answers only **2/64** and matches **1/64**. Fixed-scorer reference agreement is not verified semantic accuracy. Full report context is supplied, so this does not measure retrieval. All refusals, wrong answers and source/rounding limitations remain visible.
+
+Diagnosed period/formula and measure/unit failures are addressed in a **separate controlled-language v2**. Its full-public-split census is post-hoc development: 24/1,147 answered, 19 display matches and 14 execution matches. It is not a new held-out model score or a dependable general QA service. Full local suite: **85 tests pass**. CI replays retained outputs and data checks; it does not regenerate the neural model.
+
+[Locked protocol, full results and failures](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/docs/GROUNDED_ANSWER_AUDIT.md) · [All 64 raw outputs](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/reference/grounded_answer_audit/outputs.jsonl) · [Exact filing lineage](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/docs/FILING_LINEAGE.md) · [Separate development fixes](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/docs/CONTROLLED_CONTRACT_V2.md) · [Successful exact-source validation](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38049135102)
+
 ### 6. C++20 Event-Driven Trading Engine
 
 A versioned portable snapshot restores book state, FIFO order, chronology and counters. A separate 25,000-event, five-seed recovery study verifies 685 restores; 1,304 bit flips, 163 truncations and eight resealed invalid structures are rejected. An independent Python format/CRC decoder checks the C++ fixture. The full remote release, sanitizer, replay and performance-regression workflow passed. Historical timing remains tied to its original runner; no new latency figure is claimed.
