@@ -4,12 +4,30 @@
     "repo": "credit-risk-ifrs9-stress-testing",
     "title": "Credit Risk & Lending Decisions",
     "focus": "Financial ML, credit risk and model validation",
-    "evidence": "1,000 corrected UCI observations; 200-row holdout; paired model uncertainty and a frozen lending-policy audit.",
+    "evidence": "30,000 public Taiwan card-client records; identical 18,007-client training budgets; 6,001-client holdout; separate calibration/policy partitions and duplicate-input isolation.",
     "bullets": [
-      "Built a training-only WoE/logistic scorecard and random-forest challenger on 1,000 corrected UCI credit records; evaluated discrimination, calibration and illustrative stress losses on a 200-row holdout.",
-      "Audited paired model uncertainty: challenger AUC advantage 0.023, 95% CI [-0.014, 0.061]; exposed unequal training sizes and tested assumed prevalence shifts without refitting the holdout."
+      "Compared training-only WoE/logistic and histogram boosting on 30,000 public credit-card records; isolated duplicate inputs across four splits with equal 18,007-client training budgets and a 6,001-client holdout.",
+      "Measured AUC 0.7814/0.7897; paired group-bootstrap difference 95% CI [0.0006, 0.0161]. Calibration and assumed decision-cost advantages remained uncertain; retained all holdout predictions."
     ],
-    "limit": "Small historical oversampled dataset, no observation dates; IFRS 9/LGD/EAD assumptions are illustrative."
+    "limit": "One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative.",
+    "prior_evidence": [
+      {
+        "evidence": "1,000 corrected UCI observations; 200-row holdout; paired model uncertainty and a frozen lending-policy audit.",
+        "bullets": [
+          "Built a training-only WoE/logistic scorecard and random-forest challenger on 1,000 corrected UCI credit records; evaluated discrimination, calibration and illustrative stress losses on a 200-row holdout.",
+          "Audited paired model uncertainty: challenger AUC advantage 0.023, 95% CI [-0.014, 0.061]; exposed unequal training sizes and tested assumed prevalence shifts without refitting the holdout."
+        ],
+        "limit": "Small historical oversampled dataset, no observation dates; IFRS 9/LGD/EAD assumptions are illustrative."
+      }
+    ],
+    "latest_evidence_release": {
+      "date": "2026-10-10",
+      "source_commit": "f4bb37d2d51625f2fc76c38504072211850c7f83",
+      "ci_run_id": 38021071123,
+      "audit_path": "docs/MATCHED_COHORT_REVIEW.md",
+      "result_path": "reference/card_clients/summary.json",
+      "scope": "One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative."
+    }
   },
   {
     "id": 2,
@@ -28,12 +46,30 @@
     "repo": "enterprise-genai-rag-responsible-ai",
     "title": "Financial AI Evidence Systems",
     "focus": "Applied AI, retrieval evaluation and reliable numerical tools",
-    "evidence": "883 FinQA development questions; 3 retrievers; 33 numerical reconciliations and 7 unsupported-request controls.",
+    "evidence": "883-question FinQA retrieval comparison; 33 financial reconciliations and seven refusal controls; completed actual Qwen3-4B output audit on 128 frozen public-test questions.",
     "bullets": [
       "Benchmarked TF-IDF, BM25 and reciprocal-rank fusion on 883 FinQA development questions; TF-IDF retrieved all labelled evidence in the top three for 61.4%, with per-question outputs and pinned source identity.",
-      "Built a source-linked numerical tool layer for public financial filings; passed 33 reconciliations and 7 refusal controls for unsupported periods, entities, metrics, units and extra instructions."
+      "Built a source-linked financial calculator with 33 reconciliations and 7 refusal controls; audited actual Qwen3-4B outputs on 128 frozen questions, exposing arithmetic, source-selection and answer-scale failures."
     ],
-    "limit": "FinQA evaluation measures within-report retrieval, not end-to-end answer accuracy. The original small-model RAG study remains separately documented."
+    "limit": "Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment.",
+    "prior_evidence": [
+      {
+        "evidence": "883 FinQA development questions; 3 retrievers; 33 numerical reconciliations and 7 unsupported-request controls.",
+        "bullets": [
+          "Benchmarked TF-IDF, BM25 and reciprocal-rank fusion on 883 FinQA development questions; TF-IDF retrieved all labelled evidence in the top three for 61.4%, with per-question outputs and pinned source identity.",
+          "Built a source-linked numerical tool layer for public financial filings; passed 33 reconciliations and 7 refusal controls for unsupported periods, entities, metrics, units and extra instructions."
+        ],
+        "limit": "FinQA evaluation measures within-report retrieval, not end-to-end answer accuracy. The original small-model RAG study remains separately documented."
+      }
+    ],
+    "latest_evidence_release": {
+      "date": "2026-10-10",
+      "source_commit": "1a256dfe20a4ac13f29e9bf662459b31da42dd19",
+      "ci_run_id": 38021106315,
+      "audit_path": "docs/ANSWER_AUDIT.md",
+      "result_path": "reference/answer_audit/summary.json",
+      "scope": "Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment."
+    }
   },
   {
     "id": 4,
@@ -54,33 +90,77 @@
     "focus": "Numerical calibration, pricing diagnostics and hedging",
     "evidence": "466 filtered BTC option observations, 6 expiries; 27 common-path hedge/cost/volatility scenarios across 3,000 simulated paths.",
     "bullets": [
-      "Calibrated constrained raw-SVI smiles on 466 filtered BTC option observations across six expiries; compared held-strike interpolation with a quadratic baseline and retained fit-support diagnostics.",
+      "Calibrated constrained raw-SVI smiles on 466 filtered BTC option observations across six expiries; compared held-out-strike predictions with a quadratic baseline and retained fit-support diagnostics.",
       "Extended hedge validation to 27 volatility/frequency/cost scenarios on 3,000 common GBM paths, including initial and terminal trading costs, turnover and Monte Carlo uncertainty."
     ],
-    "limit": "One historical crypto-option snapshot and controlled GBM simulation; no global arbitrage-free or profitable-trading claim."
+    "limit": "One historical crypto-option snapshot and controlled GBM simulation; no global arbitrage-free or profitable-trading claim.",
+    "latest_evidence_release": {
+      "date": "2026-10-10",
+      "source_commit": "fd9c3ff268f8c03cf742b580981548ebab06f08f",
+      "ci_run_id": 38013024452,
+      "audit_path": "docs/EXTRAPOLATION_AUDIT.md",
+      "density_result_path": "reference/density_audit/summary.json",
+      "scope": "Frozen-parameter density/extrapolation and split audit; explicit bounded API; no global or observed-market arbitrage claim"
+    }
   },
   {
     "id": 6,
     "repo": "cpp-event-driven-trading-engine",
     "title": "C++20 Event-Driven Trading Engine",
     "focus": "Quantitative engineering, matching and verification",
-    "evidence": "25,000 randomized events; 5 seeds; every fill and all 256 order-ID slots checked against an independent vector-based oracle.",
+    "evidence": "25,000-event independent matching oracle; another 25,000-event recovery study with 685 restores, 1,304 bit-flip/163 truncation refusals; independent portable-format decoder.",
     "bullets": [
       "Built a C++20 price-time-priority matching and deterministic replay engine with partial cancellations and marketable limit orders; historical same-runner benchmark reduced event time from 145.1 ns to 104.1 ns.",
-      "Added independent differential verification across 25,000 randomized events and five seeds, checking fills, prices, quantities and all order-ID slots after each event; passed ASan/UBSan checks."
+      "Verified every fill against an independent oracle across 25,000 events; validated 685 snapshot restores across another 25,000 events, corruption/FIFO guards and ASan/UBSan checks."
     ],
-    "limit": "Synthetic replay and platform-specific historical benchmark; not live exchange latency or production trading."
+    "limit": "Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service.",
+    "prior_evidence": [
+      {
+        "evidence": "25,000 randomized events; 5 seeds; every fill and all 256 order-ID slots checked against an independent vector-based oracle.",
+        "bullets": [
+          "Built a C++20 price-time-priority matching and deterministic replay engine with partial cancellations and marketable limit orders; historical same-runner benchmark reduced event time from 145.1 ns to 104.1 ns.",
+          "Added independent differential verification across 25,000 randomized events and five seeds, checking fills, prices, quantities and all order-ID slots after each event; passed ASan/UBSan checks."
+        ],
+        "limit": "Synthetic replay and platform-specific historical benchmark; not live exchange latency or production trading."
+      }
+    ],
+    "latest_evidence_release": {
+      "date": "2026-10-10",
+      "source_commit": "bd1c9c08505a7382a772f65d993f1b3e40843316",
+      "ci_run_id": 38021343683,
+      "audit_path": "docs/RECOVERY_REVIEW.md",
+      "result_path": "reference/recovery/fixture.hex",
+      "scope": "Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service."
+    }
   },
   {
     "id": 7,
     "repo": "urban-mobility-pyspark-optimization",
     "title": "Data Engineering & Decision Optimisation",
     "focus": "Large-scale data processing and constrained optimisation",
-    "evidence": "24.08m raw TLC trips; complete zero-inclusive zone panel; 100 offline transport cases including 40 exhaustive oracle comparisons.",
+    "evidence": "24.08m-trip PySpark study and independent optimization oracles; later-period 6,003 July zone-days from 3.90m additional raw trips; frozen mean MAE 5.79 versus zero baseline 12.40.",
     "bullets": [
       "Processed 24.08m NYC taxi trips with PySpark into a complete weekday zone panel; constrained rebalancing reduced proxy vehicle-miles by 3.76% versus a distance-aware greedy baseline.",
-      "Implemented a dependency-light transport solver and verified 100 cases, including 40 exhaustive small-network comparisons; checked integrality, capacity and quantity conservation."
+      "Checked 100 transport cases, including 40 exhaustive oracles; validated frozen flow means on 6,003 later-month zone-days: MAE 5.79 versus 12.40 for a zero-flow sanity baseline."
     ],
-    "limit": "TLC trip flow does not observe idle fleet supply; centroid distance is a proxy, and allocation is a static model."
+    "limit": "Trip flow is not idle supply, centroid distance is a proxy. One later month/zero comparator is not frontier forecasting or realized dispatch savings.",
+    "prior_evidence": [
+      {
+        "evidence": "24.08m raw TLC trips; complete zero-inclusive zone panel; 100 offline transport cases including 40 exhaustive oracle comparisons.",
+        "bullets": [
+          "Processed 24.08m NYC taxi trips with PySpark into a complete weekday zone panel; constrained rebalancing reduced proxy vehicle-miles by 3.76% versus a distance-aware greedy baseline.",
+          "Implemented a dependency-light transport solver and verified 100 cases, including 40 exhaustive small-network comparisons; checked integrality, capacity and quantity conservation."
+        ],
+        "limit": "TLC trip flow does not observe idle fleet supply; centroid distance is a proxy, and allocation is a static model."
+      }
+    ],
+    "latest_evidence_release": {
+      "date": "2026-10-10",
+      "source_commit": "87ff32d9a40fde4bdf948e89b04ec649ba6b758e",
+      "ci_run_id": 38021636353,
+      "audit_path": "docs/FORWARD_PERIOD_REVIEW.md",
+      "result_path": "reference/forward_panel/summary.json",
+      "scope": "Trip flow is not idle supply, centroid distance is a proxy. One later month/zero comparator is not frontier forecasting or realized dispatch savings."
+    }
   }
 ]

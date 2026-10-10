@@ -112,5 +112,63 @@
       "held_out_total_strikes": 116,
       "scope": "Frozen-parameter finite-grid model diagnostics; new explicit support guard; not executable market arbitrage or a global proof."
     }
+  ],
+  "current_extensions": [
+    {
+      "id": 1,
+      "repo": "credit-risk-ifrs9-stress-testing",
+      "source_commit": "f4bb37d2d51625f2fc76c38504072211850c7f83",
+      "ci_run_id": 38021071123,
+      "ci_url": "https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/actions/runs/38021071123",
+      "ci_conclusion": "success",
+      "memo_path": "docs/MATCHED_COHORT_REVIEW.md",
+      "result_path": "reference/card_clients/summary.json",
+      "verification_path": "benchmark_card_clients.py",
+      "workflow_path": ".github/workflows/card_clients.yml",
+      "interpretation": "A new 30,000-record Taiwan cohort uses identical 18,007-client training budgets, duplicate-input isolation, separate calibration/policy partitions and a 6,001-client holdout. AUCs are 0.7814 and 0.7897; the paired input-group-bootstrap difference interval is [0.0006, 0.0161]. Brier and assumed decision-cost difference intervals include zero. Calibration worsens raw Brier scores in both models, and this finding is retained.",
+      "limit": "One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative."
+    },
+    {
+      "id": 3,
+      "repo": "enterprise-genai-rag-responsible-ai",
+      "source_commit": "1a256dfe20a4ac13f29e9bf662459b31da42dd19",
+      "ci_run_id": 38021106315,
+      "ci_url": "https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38021106315",
+      "ci_conclusion": "success",
+      "memo_path": "docs/ANSWER_AUDIT.md",
+      "result_path": "reference/answer_audit/summary.json",
+      "verification_path": "benchmark_answers.py",
+      "workflow_path": ".github/workflows/evidence-validation.yml",
+      "interpretation": "Qwen3-4B Q4_K_M actually generated all 128 preselected public-test outputs. The same outputs were replayed through a bounded expression/source-occurrence guard; all answers and refusals are retained. Both answer policies remain unreliable. A custom display diagnostic gives 15/122 direct and 22/122 guarded matches, with a paired improvement interval that includes zero; separate rounded execution diagnostics give 9/128 and 26/128. Scale/rounding limits prevent treating these as official FinQA accuracy or human-reviewed semantic correctness. CI replays frozen outputs and scoring; it does not rerun model generation.",
+      "limit": "Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment."
+    },
+    {
+      "id": 6,
+      "repo": "cpp-event-driven-trading-engine",
+      "source_commit": "bd1c9c08505a7382a772f65d993f1b3e40843316",
+      "ci_run_id": 38021343683,
+      "ci_url": "https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/actions/runs/38021343683",
+      "ci_conclusion": "success",
+      "memo_path": "docs/RECOVERY_REVIEW.md",
+      "result_path": "reference/recovery/fixture.hex",
+      "verification_path": "verify_snapshot_fixture.py",
+      "workflow_path": ".github/workflows/validation.yml",
+      "interpretation": "A versioned portable snapshot restores book state, FIFO order, chronology and counters. A separate 25,000-event, five-seed recovery study verifies 685 restores; 1,304 bit flips, 163 truncations and eight resealed invalid structures are rejected. An independent Python format/CRC decoder checks the C++ fixture. The full remote release, sanitizer, replay and performance-regression workflow passed. Historical timing remains tied to its original runner; no new latency figure is claimed.",
+      "limit": "Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service."
+    },
+    {
+      "id": 7,
+      "repo": "urban-mobility-pyspark-optimization",
+      "source_commit": "87ff32d9a40fde4bdf948e89b04ec649ba6b758e",
+      "ci_run_id": 38021636353,
+      "ci_url": "https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/actions/runs/38021636353",
+      "ci_conclusion": "success",
+      "memo_path": "docs/FORWARD_PERIOD_REVIEW.md",
+      "result_path": "reference/forward_panel/summary.json",
+      "verification_path": "benchmark_forward.py",
+      "workflow_path": ".github/workflows/forward.yml",
+      "interpretation": "Jan–June flow means were frozen before processing the next July period. July contributes 3,898,963 raw / 3,676,278 cleaned trips and 6,003 zero-inclusive zone-days. The frozen mean has MAE 5.79 versus 12.40 for a zero-flow sanity comparator; paired week-block MAE-difference interval is [-7.75, -4.96], based on only five week blocks. Complete-panel replay and reconstruction from the pinned raw Parquet both passed remotely. The original PySpark pipeline also passed at this source commit. Stronger seasonal/rolling forecast comparisons remain unexecuted.",
+      "limit": "Trip flow is not idle supply, centroid distance is a proxy. One later month/zero comparator is not frontier forecasting or realized dispatch savings."
+    }
   ]
 }
