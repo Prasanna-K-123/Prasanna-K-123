@@ -10,7 +10,7 @@ I work on research prototypes that connect statistical models, financial decisio
 
 | Project | Evidence to inspect |
 |---|---|
-| **1. [Credit Risk & Lending Decisions](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)** | 30,000 public Taiwan card-client records; identical 18,007-client training budgets; 6,001-client holdout; separate calibration/policy partitions and duplicate-input isolation. |
+| **1. [Credit Risk & Lending Decisions](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)** | 30,000-client borrower comparison with matched budgets; registered FDIC temporal study on 237,253 bank-year observations, 57,896 final rows and all 35 failure cases. Later-cohort detection deterioration retained. |
 | **2. [Causal Decision Science](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift)** | 64,000 randomized customers; reconciled 12,800-row evaluation; same-budget targeting gain 0.946 percentage points, conditional 95% CI [0.333, 1.561]. |
 | **3. [Financial AI Evidence Systems](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai)** | 883-question retrieval benchmark; 39 registered facts reconciled to SEC companyfacts/inline XBRL; 33 calculator checks and 7 refusals; two frozen model-answer audits (128 and 64 questions). |
 | **4. [Actuarial Risk Modelling](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics)** | Published RAA triangle; independently reproduced 9 rounded Mack standard errors; 22 later-diagonal forecasts; Excel/Python benefits model. |
@@ -37,4 +37,5 @@ Public-data studies, simulations and synthetic workbook demonstrations are label
 **Project tools:** Python, SQL, C++20, Excel, PySpark and GitHub Actions.
 
 **Contact:** ae26prasanna@mse.ac.in · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/)
+
 

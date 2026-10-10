@@ -28,6 +28,16 @@ A new 30,000-record Taiwan cohort uses identical 18,007-client training budgets,
 
 **Limit:** One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative.
 
+#### Registered temporal institutional-risk extension
+
+A separate official-FDIC study reconstructs **237,253 eligible bank-year observations** from pinned original-source extracts. Development, selection, calibration, policy and final evaluation use separate calendar partitions with purged gaps. Both full models have equal development rows and three candidate trials. The **57,896-row / 35-failure final evaluation** spans 11 annual prediction cohorts.
+
+Calibrated boosting AUC is **0.9155** versus full logistic **0.8381**, with separate paired bank/year intervals. Capital-only logistic has slightly higher pooled AUC; calibration worsens both full models' raw probability scores. Under the frozen monitoring rule, boosting catches 22/35 overall but misses **9/10 failures in the post-hoc 2022–2025 subgroup**. The bank-cluster interval for illustrative cost advantage includes zero. All cases and negative findings remain visible.
+
+[Pre-fit source freeze](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/commit/231a09b18b7648c964a5e2e3bf5e458b8876ee74) · [Protocol, results and limits](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/docs/FDIC_TEMPORAL_REVIEW.md) · [Frozen metrics](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/reference/fdic_temporal/summary.json) · [Every failure](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/reference/fdic_temporal/failure_cases.csv) · [Strict source/fit replay](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/replay_fdic_temporal.py) · [Successful actual replay CI](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/actions/runs/38064856852)
+
+**Limit:** Bank-certificate failure with competing nonfailure exits, using current historical revisions and assumed April 1 availability. This is retrospective temporal evidence, not borrower out-of-time PD or original-vintage performance. No production value or IFRS9 approval is inferred.
+
 ### 3. Financial AI Evidence Systems
 
 Qwen3-4B Q4_K_M actually generated all 128 preselected public-test outputs. The same outputs were replayed through a bounded expression/source-occurrence guard; all answers and refusals are retained. Both answer policies remain unreliable. A custom display diagnostic gives 15/122 direct and 22/122 guarded matches, with a paired improvement interval that includes zero; separate rounded execution diagnostics give 9/128 and 26/128. Scale/rounding limits prevent treating these as official FinQA accuracy or human-reviewed semantic correctness. CI replays frozen outputs and scoring; it does not rerun model generation.
@@ -125,4 +135,5 @@ A separate vector-based matcher checks 25,000 randomized events across five seed
 These are independent portfolio projects developed with AI assistance. Public-data studies, controlled simulations and synthetic demonstrations are labelled separately. Negative and inconclusive findings remain part of the evidence. They are not client engagements, production deployments, third-party endorsements or peer-reviewed publications.
 
 [Profile](https://github.com/Prasanna-K-123) · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/) · ae26prasanna@mse.ac.in
+
 
