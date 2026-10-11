@@ -1,3 +1,15 @@
+## Explicit financial-answer reliability — completed October 11, 2026
+
+[Working calculator, full comparison and limits](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c66b99b6cd587dfd73c8876fa2c566ab9c7dd29f/docs/SEMANTIC_CONTRACT_REVIEW.md) · [Registered design](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c40bc357c9a92d87618ab86a16e20f2371f08601/docs/SEMANTIC_CONTRACT_DESIGN.md) · [Every fault-stratum count](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c66b99b6cd587dfd73c8876fa2c566ab9c7dd29f/reference/semantic_contract/SUMMARY.json).
+
+A typed financial calculator verifies 24 annual Apple/Microsoft source contexts against SEC concept histories and inline XBRL. Exact issuer, concept, observation dates, accession, units and executable operation form the answer contract. In a registered **3,498-case constructed suite**, the strict policy returns all **368 required complete answers** and **3,130 required refusals**, with zero observed escapes or false refusals in this defined suite. Source-addressed arithmetic alone accepts 2,930 invalid cases; using reported numbers accepts 3,101 invalid/wrong answers. The separate non-LLM planner answers all 172 supported explicit requests with provenance.
+
+These are engineered conformance cases, with many variants sharing only 24 source contexts. Proposals are constructed and perturbed, not new neural outputs. This is **not held-out natural-language accuracy, general financial entailment, source authenticity, external review, candidate mastery or production adoption**. The original retrieval, CCL source/calculator, 128/64 neural studies and sparse post-hoc controlled-language results remain byte-preserved, including their adverse findings.
+
+All 114 tests and every source/input/answer/refusal/artifact check pass: [full branch replay](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38134205794), [full main replay](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38134291004), and [main replay of all preserved financial evidence](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38134290939). The registration run correctly skipped stored-result equality before outputs existed. Replay does not regenerate old neural inference.
+
+---
+
 # Seven-project portfolio: evidence guide
 
 **Prasanna K · Quantitative modelling & reliable decision systems · Summer 2027**
