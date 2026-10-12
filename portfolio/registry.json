@@ -152,12 +152,12 @@
     "repo": "employee-benefits-actuarial-analytics",
     "title": "Actuarial Risk Modelling",
     "focus": "Employee benefits, claims reserving and uncertainty",
-    "evidence": "Nine external RAA Mack references and original 22 forecasts; registered six-measure/123-cell predictive audit and 1,024 controlled cases expose calendar-risk undercoverage; Excel/Python synthetic benefits model.",
+    "evidence": "Registered 6,144 new synthetic whole triangles (2,048 calibration; 4,096 evaluation) and 98,304 reused interval comparisons: nominal-95% matched absolute-conformal coverage 95.12–95.90%, but transferred shared-calendar coverage 83.98%. Earlier public Mack/predictive findings and synthetic-benefits model retained.",
     "bullets": [
       "Implemented Mack reserving on 55 published RAA cells, reconciled nine external standard-error references, and built a formula-driven Excel/Python benefits model using synthetic data.",
-      "Registered predictive audits on six public measures and 1,024 simulated triangles; nominal 95% intervals covered 8/26 ABC later cells and 79.3-83.6% under simulated shared-calendar risk; 37 tests passed."
+      "Registered calibrated prediction intervals across 6,144 whole synthetic triangles: matched absolute-conformal nominal-95% coverage 95.12–95.90%, but 83.98% under shared-calendar transfer; all 98,304 reused interval rows independently audited."
     ],
-    "limit": "Retrospective dependent public triangles and fixed simulation designs; moment approximations lack validated nominal coverage. Synthetic benefits proxies; no client reserve, capital calibration or IAS 19/ASC 715 valuation.",
+    "limit": "Four inspected synthetic laws; whole-triangle marginal exchangeability only. Transfer from independent lognormal to shared-calendar risk falls to 83.98%; exposure-subgroup, conditional, temporal and real-insurer coverage are not established. Historical public reserving and synthetic benefits remain separate; no client reserve or regulatory/accounting valuation.",
     "prior_evidence": [
       {
         "evidence": "Published RAA triangle; independently reproduced 9 rounded Mack standard errors; 22 later-diagonal forecasts; Excel/Python benefits model.",
@@ -169,22 +169,39 @@
       }
     ],
     "latest_evidence_release": {
-      "date": "2026-10-11",
-      "source_commit": "d85f40f755d85c79192ca0431adbab6652eba44b",
-      "initial_registration_commit": "3c75d8ed52c87eb09280325ab1ec9c32202d0746",
-      "pre_execution_dependency_commit": "12ad3aa2b2cbf94144782590ba865125f1a065ca",
-      "computational_amendment_commit": "95d17e708e7eec12642cd5faa7ca7c7df8c62296",
-      "protocol_sha256": "49cd1c7bad5c2d8a1c72fd25cf2d7a5faa8b15e2c0a6002964fd8c8f54a98b01",
-      "audit_path": "docs/PREDICTIVE_UNCERTAINTY_REVIEW.md",
-      "result_path": "outputs/predictive_reserving/summary.json",
-      "case_path": "outputs/predictive_reserving/calibration_cases.csv",
-      "scope": "Retrospective dependent public triangles and fixed simulation designs; moment approximations lack validated nominal coverage. Synthetic benefits proxies; no client reserve, capital calibration or IAS 19/ASC 715 valuation.",
-      "ci_run_id": 38102932710,
-      "ci_job_id": 114362437904,
-      "legacy_workbook_ci_run_id": 38102932706,
-      "legacy_workbook_ci_job_id": 114362437713,
-      "ci_replay_scope": "All stored scores/public results and 1024 generated designs; 16 fixed predictive case replays, not all 1024 fits"
-    }
+      "date": "2026-10-12",
+      "source_commit": "e0ecf8e930918a462b27143ff0f1a57cb30df087",
+      "registration_commit": "73bf40e2fa16cb7bd81fabc04c320abfa87cff2a",
+      "result_commit": "67f3cfab1631e94bcd1849fa9b23ab729ad8a337",
+      "protocol_sha256": "91f6a810d2ed6c88aa0f6a54c50cc81db9d9a81b2df3dc341e01a4e14e880f90",
+      "audit_path": "docs/CONFORMAL_RESERVING_REVIEW.md",
+      "result_path": "outputs/conformal_reserving/SUMMARY.json",
+      "verification_path": "verify_conformal_reserving.py",
+      "scope": "Four inspected synthetic laws; whole-triangle marginal exchangeability only. Transfer from independent lognormal to shared-calendar risk falls to 83.98%; exposure-subgroup, conditional, temporal and real-insurer coverage are not established. Historical public reserving and synthetic benefits remain separate; no client reserve or regulatory/accounting valuation.",
+      "ci_run_id": 38238315104,
+      "ci_job_id": 114774367460,
+      "ci_trigger": "branch at identical final source SHA; main-run status not independently checked",
+      "ci_replay_scope": "All 6,144 new whole-triangle forecasts, 98,304 reused interval rows, 384 exposure strata and complete generator-design replay; 74 repository tests"
+    },
+    "previous_evidence_releases": [
+      {
+        "date": "2026-10-11",
+        "source_commit": "d85f40f755d85c79192ca0431adbab6652eba44b",
+        "initial_registration_commit": "3c75d8ed52c87eb09280325ab1ec9c32202d0746",
+        "pre_execution_dependency_commit": "12ad3aa2b2cbf94144782590ba865125f1a065ca",
+        "computational_amendment_commit": "95d17e708e7eec12642cd5faa7ca7c7df8c62296",
+        "protocol_sha256": "49cd1c7bad5c2d8a1c72fd25cf2d7a5faa8b15e2c0a6002964fd8c8f54a98b01",
+        "audit_path": "docs/PREDICTIVE_UNCERTAINTY_REVIEW.md",
+        "result_path": "outputs/predictive_reserving/summary.json",
+        "case_path": "outputs/predictive_reserving/calibration_cases.csv",
+        "scope": "Retrospective dependent public triangles and fixed simulation designs; moment approximations lack validated nominal coverage. Synthetic benefits proxies; no client reserve, capital calibration or IAS 19/ASC 715 valuation.",
+        "ci_run_id": 38102932710,
+        "ci_job_id": 114362437904,
+        "legacy_workbook_ci_run_id": 38102932706,
+        "legacy_workbook_ci_job_id": 114362437713,
+        "ci_replay_scope": "All stored scores/public results and 1024 generated designs; 16 fixed predictive case replays, not all 1024 fits"
+      }
+    ]
   },
   {
     "id": 5,
