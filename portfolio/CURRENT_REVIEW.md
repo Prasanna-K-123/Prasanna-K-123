@@ -38,15 +38,15 @@ Start with **Financial AI** for source-bound engineering, **Credit** for financi
 
 ## 4. Actuarial Risk Modelling
 
-Nine external RAA Mack references and original 22 forecasts; registered six-measure/123-cell predictive audit and 1,024 controlled cases expose calendar-risk undercoverage; Excel/Python synthetic benefits model.
+Registered 6,144 new independent synthetic whole triangles (2,048 calibration; 4,096 evaluation) across four inspected laws. At nominal 95%, matched absolute-conformal intervals covered 95.12–95.90% but independent-lognormal calibration transferred to shared-calendar risk covered only 83.98% (860/1,024). All 98,304 reused interval rows and 384 exposure strata were independently audited; calibrated/shift and exposure-subgroup failures remain visible. The prior six-public-measure/123-cell audit, 1,024 simulation cases and Excel/Python benefits model are preserved.
 
-**Interpretation limit:** Retrospective dependent public triangles and fixed simulation designs; moment approximations lack validated nominal coverage. Synthetic benefits proxies; no client reserve, capital calibration or IAS 19/ASC 715 valuation.
+**Interpretation limit:** Matched whole-triangle marginal exchangeability does not establish conditional, subgroup, shifted-law, temporal, live-client or regulatory-capital coverage. Synthetic benefits proxies are not an IAS 19/ASC 715 valuation. Scaled conformal is not uniformly better than calibrated normal; negative results and old adverse studies retained.
 
-[Review](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/d85f40f755d85c79192ca0431adbab6652eba44b/docs/PREDICTIVE_UNCERTAINTY_REVIEW.md) · [Frozen results](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/d85f40f755d85c79192ca0431adbab6652eba44b/outputs/predictive_reserving/summary.json) · [Verification](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/d85f40f755d85c79192ca0431adbab6652eba44b/verify_predictive_reserving.py) · [Successful matching-head CI](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/38102932710)
+[New review](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/docs/CONFORMAL_RESERVING_REVIEW.md) · [All registered results](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/outputs/conformal_reserving/SUMMARY.json) · [Independent audit](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/verify_conformal_reserving.py) · [Successful matching-SHA branch CI](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/38238315104) · [Prior predictive review](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/docs/PREDICTIVE_UNCERTAINTY_REVIEW.md)
 
-**Replay scope:** All stored scores/public results and 1024 generated designs; 16 fixed predictive case replays, not all 1024 fits
+**Replay scope:** All 6,144 new forecasts, all 98,304 reused interval outcomes, 384 exposure strata, full design replay and 74 tests. Branch CI matches final source SHA; main-run status not independently confirmed.
 
-**Useful review questions:** Are the Mack covariance, shared-factor moment approximations and failed-case denominators correct? Do calendar/tail sensitivity and dependent public folds support the stated coverage limits?
+**Useful review questions:** Does whole-triangle exchangeability support any subgroup or time-shift guarantee? Do the transfer collapse, subgroup deficits and interval-width/score tradeoffs change the conclusion?
 
 ## 5. Derivatives & Hedging Model Risk
 
