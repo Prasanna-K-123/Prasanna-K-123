@@ -26,6 +26,14 @@ This guide links directly to the published results, verification and reproductio
 
 The current extensions below link to frozen source commits and successful remote checks. The earlier October 9 evidence remains linked separately for reproduction. Passing checks establish only their stated contract; they do not prove model quality or production readiness.
 
+## October 12 registered whole-triangle calibration and shift challenge
+
+Project4 adds **6,144 registered synthetic whole triangles** (2,048 calibration and 4,096 separate evaluation), 98,304 reused interval comparisons and an independent audit of every forecast, interval and design. Matched absolute-conformal nominal-95% coverage was **95.12–95.90%** across the four inspected laws. A frozen independent-lognormal calibrator transferred to shared-calendar risk covered only **83.98% (860/1,024)**; exposure-subgroup undercoverage and interval-score/width tradeoffs are retained. This is neither real-insurer validation nor a shift, subgroup or temporal guarantee. Old predictive-reserving evidence, including its failures, is preserved.
+
+[Complete review](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/docs/CONFORMAL_RESERVING_REVIEW.md) · [Frozen protocol](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/73bf40e2fa16cb7bd81fabc04c320abfa87cff2a/reference/conformal_reserving/PROTOCOL.json) · [All results](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/outputs/conformal_reserving/SUMMARY.json) · [Independent audit](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/verify_conformal_reserving.py) · [Matching-SHA branch CI](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/38238315104)
+
+---
+
 ## October 11 registered multidate shape comparison
 
 Project5 now compares raw SVI, quadratic variance, convex call prices and joint constrained SSVI on a CC0 December 2018 archive: **nine available dates**, **1,868 raw option rows**, **27 eligible date/expiry groups** and **195 held-out strikes**. One registered date stays missing. Source/schema corrections were documented before inversion or fitting; complete methods and hashes were registered before execution. Held-out outcomes are recorded before full refits.
