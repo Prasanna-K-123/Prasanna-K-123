@@ -4,12 +4,12 @@
     "repo": "credit-risk-ifrs9-stress-testing",
     "title": "Credit Risk & Lending Decisions",
     "focus": "Financial ML, credit risk and model validation",
-    "evidence": "30,000 public Taiwan card-client records; identical 18,007-client training budgets; 6,001-client holdout; separate calibration/policy partitions and duplicate-input isolation.",
+    "evidence": "30,000 card-client matched-budget borrower study; registered FDIC temporal study on 237,253 bank-year records, 57,896 final rows and all 35 failure cases.",
     "bullets": [
-      "Compared training-only WoE/logistic and histogram boosting on 30,000 public credit-card records; isolated duplicate inputs across four splits with equal 18,007-client training budgets and a 6,001-client holdout.",
-      "Measured AUC 0.7814/0.7897; paired group-bootstrap difference 95% CI [0.0006, 0.0161]. Calibration and assumed decision-cost advantages remained uncertain; retained all holdout predictions."
+      "Compared WoE/logistic and boosting on 30,000 card-client records with isolated duplicate inputs, equal 18,007-client training budgets and a separate 6,001-client holdout.",
+      "Registered a temporal FDIC study on 237,253 bank-year records; evaluated 57,896 later rows with bank/year uncertainty, exposing 9/10 missed later-cohort failures under a frozen monitoring rule."
     ],
-    "limit": "One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative.",
+    "limit": "Historical borrower cohorts plus revised FDIC histories with assumed availability lag; bank failure, not borrower OOT PD. Later detection and calibration deteriorate; ECL/LGD/EAD assumptions illustrative.",
     "prior_evidence": [
       {
         "evidence": "1,000 corrected UCI observations; 200-row holdout; paired model uncertainty and a frozen lending-policy audit.",
@@ -18,40 +18,84 @@
           "Audited paired model uncertainty: challenger AUC advantage 0.023, 95% CI [-0.014, 0.061]; exposed unequal training sizes and tested assumed prevalence shifts without refitting the holdout."
         ],
         "limit": "Small historical oversampled dataset, no observation dates; IFRS 9/LGD/EAD assumptions are illustrative."
+      },
+      {
+        "evidence": "30,000 public Taiwan card-client records; identical 18,007-client training budgets; 6,001-client holdout; separate calibration/policy partitions and duplicate-input isolation.",
+        "bullets": [
+          "Compared training-only WoE/logistic and histogram boosting on 30,000 public credit-card records; isolated duplicate inputs across four splits with equal 18,007-client training budgets and a 6,001-client holdout.",
+          "Measured AUC 0.7814/0.7897; paired group-bootstrap difference 95% CI [0.0006, 0.0161]. Calibration and assumed decision-cost advantages remained uncertain; retained all holdout predictions."
+        ],
+        "limit": "One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative."
       }
     ],
     "latest_evidence_release": {
       "date": "2026-10-10",
-      "source_commit": "f4bb37d2d51625f2fc76c38504072211850c7f83",
-      "ci_run_id": 38021071123,
-      "audit_path": "docs/MATCHED_COHORT_REVIEW.md",
-      "result_path": "reference/card_clients/summary.json",
-      "scope": "One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative."
-    }
+      "source_commit": "6a2b03af67d4c99bdc1a16542b367a45874b1230",
+      "source_freeze_commit": "231a09b18b7648c964a5e2e3bf5e458b8876ee74",
+      "ci_run_id": 38064856852,
+      "ci_job_id": 114250330360,
+      "audit_path": "docs/FDIC_TEMPORAL_REVIEW.md",
+      "result_path": "reference/fdic_temporal/summary.json",
+      "case_path": "reference/fdic_temporal/failure_cases.csv",
+      "scope": "Historical borrower cohorts plus revised FDIC histories with assumed availability lag; bank failure, not borrower OOT PD. Later detection and calibration deteriorate; ECL/LGD/EAD assumptions illustrative."
+    },
+    "previous_evidence_releases": [
+      {
+        "date": "2026-10-10",
+        "source_commit": "f4bb37d2d51625f2fc76c38504072211850c7f83",
+        "ci_run_id": 38021071123,
+        "audit_path": "docs/MATCHED_COHORT_REVIEW.md",
+        "result_path": "reference/card_clients/summary.json",
+        "scope": "One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative."
+      }
+    ]
   },
   {
     "id": 2,
     "repo": "causal-marketing-experimentation-uplift",
     "title": "Causal Decision Science",
     "focus": "Experimentation, targeting and statistical decision-making",
-    "evidence": "64,000 randomized customers; reconciled 12,800-row evaluation; same-budget targeting gain 0.946 percentage points, conditional 95% CI [0.333, 1.561].",
+    "evidence": "64,000 randomized customer records; 12,800 evaluation rows; 256 registered selection/refit draws give visit-gain 2.5th/97.5th percentiles [-0.252, +1.262] pp; 16 nonpositive draws.",
     "bullets": [
       "Analysed a 64,000-customer randomized email experiment with 5,000 bootstrap resamples and Holm correction; selected a T-learner using a fixed train/validation/evaluation split.",
-      "Reconciled same-budget policy value on 12,800 evaluation records: +0.946 percentage points in visits versus random 30% targeting, conditional 95% CI [0.333, 1.561]; retained the failed spend-heterogeneity result."
+      "On 12,800 evaluation rows, 256 selection/refit resamples gave visit gains vs random 30% targeting of -0.252/+1.262 pp (2.5th/97.5th percentiles); spend advantage remained unvalidated."
     ],
-    "limit": "Public retrospective evaluation; uncertainty is conditional on the fitted ranking. No profit or individual-treatment-effect claim."
+    "limit": "Inspected 2008 experiment and fixed split; empirical sensitivity ranges, not coverage-certified confidence intervals or a new trial. Customer independence assumed; no profit or individual-treatment-effect claim.",
+    "prior_evidence": [
+      {
+        "evidence": "64,000 randomized customers; reconciled 12,800-row evaluation; same-budget targeting gain 0.946 percentage points, conditional 95% CI [0.333, 1.561].",
+        "bullets": [
+          "Analysed a 64,000-customer randomized email experiment with 5,000 bootstrap resamples and Holm correction; selected a T-learner using a fixed train/validation/evaluation split.",
+          "Reconciled same-budget policy value on 12,800 evaluation records: +0.946 percentage points in visits versus random 30% targeting, conditional 95% CI [0.333, 1.561]; retained the failed spend-heterogeneity result."
+        ],
+        "limit": "Public retrospective evaluation; uncertainty is conditional on the fitted ranking. No profit or individual-treatment-effect claim."
+      }
+    ],
+    "latest_evidence_release": {
+      "date": "2026-10-10",
+      "source_commit": "b8ca8fb0afe7538f882570b92f8286c156118197",
+      "registration_commit": "1ae042393950d130d81020c20e94f0da89859b7e",
+      "protocol_sha256": "ddcbeecdb1ac9ffb693df73ea7cf2970e3744e4c10d355b8e9e849cfc192c55d",
+      "audit_path": "docs/REFIT_UNCERTAINTY_REVIEW.md",
+      "result_path": "reference/refit_uncertainty/summary.json",
+      "replicate_path": "reference/refit_uncertainty/replicates.csv",
+      "scope": "Inspected 2008 experiment and fixed split; empirical sensitivity ranges, not coverage-certified confidence intervals or a new trial. Customer independence assumed; no profit or individual-treatment-effect claim.",
+      "ci_run_id": 38073336406,
+      "ci_job_id": 114275093437,
+      "ci_refit_replay_scope": "All metrics/draw identities; full refit IDs 0,85,170,255; 256 original study draws"
+    }
   },
   {
     "id": 3,
     "repo": "enterprise-genai-rag-responsible-ai",
     "title": "Financial AI Evidence Systems",
     "focus": "Applied AI, retrieval evaluation and reliable numerical tools",
-    "evidence": "883-question retrieval benchmark; 39 registered facts reconciled to SEC companyfacts/inline XBRL; 33 calculator checks and 7 refusals; two frozen model-answer audits (128 and 64 questions).",
+    "evidence": "24 annual SEC Apple/Microsoft source contexts; registered 3,498 constructed complete-answer contract cases and 172 supported explicit requests; preserved 883-question retrieval and both actual 128/64 neural audits.",
     "bullets": [
-      "Benchmarked TF-IDF, BM25 and reciprocal-rank fusion on 883 FinQA development questions; TF-IDF retrieved all labelled evidence in the top three for 61.4%, with per-question outputs and pinned source identity.",
-      "Reconciled 39 financial data records across SEC companyfacts and inline XBRL; checked 33 calculations and 7 refusal controls. Audited model answers on frozen sets of 128 and 64 questions, retaining source, unit and arithmetic failures."
+      "Built a typed financial-answer engine with exact issuer, concept, period, unit and formula checks; reconciled 24 annual source contexts across Apple and Microsoft SEC filings.",
+      "Compared three policies on 3,498 constructed contract cases: strict controls returned 368 complete answers and 3,130 required refusals. Preserved unreliable neural audits on 128 and 64 questions."
     ],
-    "limit": "Explicit historical calculator only. General model answers remain unreliable; exact source addresses and reference-match diagnostics do not prove semantic correctness. Controlled-language v2 has sparse, post-hoc development evidence.",
+    "limit": "Explicit request/program conformance on 24 source contexts and defined manufactured faults; no general natural-language accuracy, unknown-fault guarantee, source-authenticity certificate, external review, adoption or assessed mastery. Both neural studies remain unreliable.",
     "prior_evidence": [
       {
         "evidence": "883 FinQA development questions; 3 retrievers; 33 numerical reconciliations and 7 unsupported-request controls.",
@@ -60,17 +104,37 @@
           "Built a source-linked numerical tool layer for public financial filings; passed 33 reconciliations and 7 refusal controls for unsupported periods, entities, metrics, units and extra instructions."
         ],
         "limit": "FinQA evaluation measures within-report retrieval, not end-to-end answer accuracy. The original small-model RAG study remains separately documented."
+      },
+      {
+        "evidence": "883-question retrieval benchmark; 39 registered facts reconciled to SEC companyfacts/inline XBRL; 33 calculator checks and 7 refusals; two frozen model-answer audits (128 and 64 questions).",
+        "bullets": [
+          "Benchmarked TF-IDF, BM25 and reciprocal-rank fusion on 883 FinQA development questions; TF-IDF retrieved all labelled evidence in the top three for 61.4%, with per-question outputs and pinned source identity.",
+          "Reconciled 39 financial data records across SEC companyfacts and inline XBRL; checked 33 calculations and 7 refusal controls. Audited model answers on frozen sets of 128 and 64 questions, retaining source, unit and arithmetic failures."
+        ],
+        "limit": "Explicit historical calculator only. General model answers remain unreliable; exact source addresses and reference-match diagnostics do not prove semantic correctness. Controlled-language v2 has sparse, post-hoc development evidence.",
+        "latest_evidence_release": {
+          "date": "2026-10-10",
+          "source_commit": "a0368d045e2b403ca9185b168557eda831922059",
+          "ci_run_id": 38049135102,
+          "audit_path": "docs/GROUNDED_ANSWER_AUDIT.md",
+          "result_path": "reference/grounded_answer_audit/summary.json",
+          "lineage_path": "docs/FILING_LINEAGE.md",
+          "development_path": "docs/CONTROLLED_CONTRACT_V2.md",
+          "scope": "Explicit historical calculator only. General model answers remain unreliable; exact source addresses and reference-match diagnostics do not prove semantic correctness. Controlled-language v2 has sparse, post-hoc development evidence."
+        }
       }
     ],
     "latest_evidence_release": {
-      "date": "2026-10-10",
-      "source_commit": "a0368d045e2b403ca9185b168557eda831922059",
-      "ci_run_id": 38049135102,
-      "audit_path": "docs/GROUNDED_ANSWER_AUDIT.md",
-      "result_path": "reference/grounded_answer_audit/summary.json",
-      "lineage_path": "docs/FILING_LINEAGE.md",
-      "development_path": "docs/CONTROLLED_CONTRACT_V2.md",
-      "scope": "Explicit historical calculator only. General model answers remain unreliable; exact source addresses and reference-match diagnostics do not prove semantic correctness. Controlled-language v2 has sparse, post-hoc development evidence."
+      "date": "2026-10-11",
+      "source_commit": "c66b99b6cd587dfd73c8876fa2c566ab9c7dd29f",
+      "registration_commit": "c40bc357c9a92d87618ab86a16e20f2371f08601",
+      "ci_run_id": 38134291004,
+      "ci_job_id": 114454867510,
+      "legacy_ci_run_id": 38134290939,
+      "legacy_ci_job_id": 114454867297,
+      "audit_path": "docs/SEMANTIC_CONTRACT_REVIEW.md",
+      "result_path": "reference/semantic_contract/SUMMARY.json",
+      "scope": "Explicit request/program conformance on 24 source contexts and defined manufactured faults; no general natural-language accuracy, unknown-fault guarantee, source-authenticity certificate, external review, adoption or assessed mastery. Both neural studies remain unreliable."
     },
     "previous_evidence_releases": [
       {
@@ -88,44 +152,116 @@
     "repo": "employee-benefits-actuarial-analytics",
     "title": "Actuarial Risk Modelling",
     "focus": "Employee benefits, claims reserving and uncertainty",
-    "evidence": "Published RAA triangle; independently reproduced 9 rounded Mack standard errors; 22 later-diagonal forecasts; Excel/Python benefits model.",
+    "evidence": "Nine external RAA Mack references and original 22 forecasts; registered six-measure/123-cell predictive audit and 1,024 controlled cases expose calendar-risk undercoverage; Excel/Python synthetic benefits model.",
     "bullets": [
-      "Implemented Mack reserving from a published 55-cell RAA triangle; reproduced nine external standard-error references and evaluated 22 later-diagonal forecasts against a no-development baseline.",
-      "Built a formula-driven Excel/Python benefits model with synthetic employee and claims data; added stochastic-reserving controls to the existing workbook validation, for 12 passing model tests."
+      "Implemented Mack reserving on 55 published RAA cells, reconciled nine external standard-error references, and built a formula-driven Excel/Python benefits model using synthetic data.",
+      "Registered predictive audits on six public measures and 1,024 simulated triangles; nominal 95% intervals covered 8/26 ABC later cells and 79.3-83.6% under simulated shared-calendar risk; 37 tests passed."
     ],
-    "limit": "RAA is a historical reinsurance benchmark, not health-client data. Benefits valuation uses synthetic proxies and is not an IAS 19/ASC 715 valuation."
+    "limit": "Retrospective dependent public triangles and fixed simulation designs; moment approximations lack validated nominal coverage. Synthetic benefits proxies; no client reserve, capital calibration or IAS 19/ASC 715 valuation.",
+    "prior_evidence": [
+      {
+        "evidence": "Published RAA triangle; independently reproduced 9 rounded Mack standard errors; 22 later-diagonal forecasts; Excel/Python benefits model.",
+        "bullets": [
+          "Implemented Mack reserving from a published 55-cell RAA triangle; reproduced nine external standard-error references and evaluated 22 later-diagonal forecasts against a no-development baseline.",
+          "Built a formula-driven Excel/Python benefits model with synthetic employee and claims data; added stochastic-reserving controls to the existing workbook validation, for 12 passing model tests."
+        ],
+        "limit": "RAA is a historical reinsurance benchmark, not health-client data. Benefits valuation uses synthetic proxies and is not an IAS 19/ASC 715 valuation."
+      }
+    ],
+    "latest_evidence_release": {
+      "date": "2026-10-11",
+      "source_commit": "d85f40f755d85c79192ca0431adbab6652eba44b",
+      "initial_registration_commit": "3c75d8ed52c87eb09280325ab1ec9c32202d0746",
+      "pre_execution_dependency_commit": "12ad3aa2b2cbf94144782590ba865125f1a065ca",
+      "computational_amendment_commit": "95d17e708e7eec12642cd5faa7ca7c7df8c62296",
+      "protocol_sha256": "49cd1c7bad5c2d8a1c72fd25cf2d7a5faa8b15e2c0a6002964fd8c8f54a98b01",
+      "audit_path": "docs/PREDICTIVE_UNCERTAINTY_REVIEW.md",
+      "result_path": "outputs/predictive_reserving/summary.json",
+      "case_path": "outputs/predictive_reserving/calibration_cases.csv",
+      "scope": "Retrospective dependent public triangles and fixed simulation designs; moment approximations lack validated nominal coverage. Synthetic benefits proxies; no client reserve, capital calibration or IAS 19/ASC 715 valuation.",
+      "ci_run_id": 38102932710,
+      "ci_job_id": 114362437904,
+      "legacy_workbook_ci_run_id": 38102932706,
+      "legacy_workbook_ci_job_id": 114362437713,
+      "ci_replay_scope": "All stored scores/public results and 1024 generated designs; 16 fixed predictive case replays, not all 1024 fits"
+    }
   },
   {
     "id": 5,
     "repo": "volatility-surface-model-risk",
     "title": "Derivatives & Hedging Model Risk",
     "focus": "Numerical calibration, pricing diagnostics and hedging",
-    "evidence": "466 filtered BTC option observations, 6 expiries; 27 common-path hedge/cost/volatility scenarios across 3,000 simulated paths.",
+    "evidence": "Registered four-method comparison on nine historical BTC dates: 1,868 raw option rows, 27 eligible date/expiry groups, 195 held-out strikes. Raw SVI common-interior IV RMSE 1.84 pp vs SSVI 3.98 pp; raw SVI fails 23/27 stress-density checks. Original 466-row/six-expiry study and 27 hedge scenarios on 3,000 GBM paths preserved.",
     "bullets": [
-      "Calibrated constrained raw-SVI smiles on 466 filtered BTC option observations across six expiries; compared held-out-strike predictions with a quadratic baseline and retained fit-support diagnostics.",
-      "Extended hedge validation to 27 volatility/frequency/cost scenarios on 3,000 common GBM paths, including initial and terminal trading costs, turnover and Monte Carlo uncertainty."
+      "Registered four-method comparisons on nine historical BTC dates and 195 held-out strikes; raw SVI IV RMSE 1.84 pp vs SSVI 3.98 pp on common interior support.",
+      "Exposed 23/27 raw-SVI stress-density failures; constrained SSVI passed the fixed grid at worse fit. Reconstructed research IV; no trading-PnL claim."
     ],
-    "limit": "One historical crypto-option snapshot and controlled GBM simulation; no global arbitrage-free or profitable-trading claim.",
+    "limit": "Dependent December 2018 convenience archive, amended pre-fit registration and reconstructed variance under zero-rate/index/recorded-underlying assumptions; mismatched underlying references retained. SSVI idealized sufficient conditions do not validate market forwards or unseen tails. Convex model refuses 13 boundary points. No forecast, validated venue IV, executable arbitrage or realized PnL; prior GBM hedging is simulation.",
     "latest_evidence_release": {
-      "date": "2026-10-10",
-      "source_commit": "fd9c3ff268f8c03cf742b580981548ebab06f08f",
-      "ci_run_id": 38013024452,
-      "audit_path": "docs/EXTRAPOLATION_AUDIT.md",
-      "density_result_path": "reference/density_audit/summary.json",
-      "scope": "Frozen-parameter density/extrapolation and split audit; explicit bounded API; no global or observed-market arbitrage claim"
-    }
+      "date": "2026-10-11",
+      "source_commit": "3796e204d69267ce68f738fcc18ae983bdf8d32b",
+      "first_design_commit": "00c60fff7fcb57a5961116ddeae344832e2ff5a0",
+      "complete_method_registration_commit": "c84299c663c09ec4b8889ab947397600df156f1c",
+      "method_manifest_sha256": "bccaf1fc4e535143bcbb88e7208557b9ccb8714ab7854349ac5958a468321185",
+      "input_sha256": "137cffb2923ac7e38047c3001fe58cee5576543e7b946450f25cbd02155234ac",
+      "source_doi": "10.17632/hfd4b8zfw6.2",
+      "source_licence": "CC0-1.0",
+      "audit_path": "docs/MULTIDATE_SHAPE_REVIEW.md",
+      "result_path": "reference/multidate_shape/results/summary.json",
+      "prediction_path": "reference/multidate_shape/results/predictions.csv",
+      "scope": "Dependent December 2018 convenience archive, amended pre-fit registration and reconstructed variance under zero-rate/index/recorded-underlying assumptions; mismatched underlying references retained. SSVI idealized sufficient conditions do not validate market forwards or unseen tails. Convex model refuses 13 boundary points. No forecast, validated venue IV, executable arbitrage or realized PnL; prior GBM hedging is simulation.",
+      "registered_days": 10,
+      "observed_days": 9,
+      "missing_days": [
+        "2018-12-09"
+      ],
+      "raw_rows": 1868,
+      "eligible_rows": 796,
+      "date_expiry_groups": 27,
+      "heldout_strikes": 195,
+      "common_interior_strikes": 182,
+      "boundary_strikes": 13,
+      "failed_fits": 0,
+      "unit_tests": 45,
+      "ci_status": "PASS_FULL_BRANCH_MAIN",
+      "branch_run": 38126001295,
+      "branch_job": 114430376441,
+      "ci_replay_scope": "All nine available dates, every original/new unit test, every result row and full frozen-reference replay",
+      "main_shape_run": 38126080439,
+      "main_shape_job": 114430612220,
+      "main_historical_run": 38126080445,
+      "main_historical_job": 114430612133
+    },
+    "prior_evidence": [
+      {
+        "evidence": "466 filtered BTC option observations, 6 expiries; 27 common-path hedge/cost/volatility scenarios across 3,000 simulated paths.",
+        "bullets": [
+          "Calibrated constrained raw-SVI smiles on 466 filtered BTC option observations across six expiries; compared held-out-strike predictions with a quadratic baseline and retained fit-support diagnostics.",
+          "Extended hedge validation to 27 volatility/frequency/cost scenarios on 3,000 common GBM paths, including initial and terminal trading costs, turnover and Monte Carlo uncertainty."
+        ],
+        "limit": "One historical crypto-option snapshot and controlled GBM simulation; no global arbitrage-free or profitable-trading claim.",
+        "latest_evidence_release": {
+          "date": "2026-10-10",
+          "source_commit": "fd9c3ff268f8c03cf742b580981548ebab06f08f",
+          "ci_run_id": 38013024452,
+          "audit_path": "docs/EXTRAPOLATION_AUDIT.md",
+          "density_result_path": "reference/density_audit/summary.json",
+          "scope": "Frozen-parameter density/extrapolation and split audit; explicit bounded API; no global or observed-market arbitrage claim"
+        }
+      }
+    ]
   },
   {
     "id": 6,
     "repo": "cpp-event-driven-trading-engine",
     "title": "C++20 Event-Driven Trading Engine",
     "focus": "Quantitative engineering, matching and verification",
-    "evidence": "25,000-event independent matching oracle; another 25,000-event recovery study with 685 restores, 1,304 bit-flip/163 truncation refusals; independent portable-format decoder.",
+    "evidence": "25,000-event independent matching oracle; separate 25,000-event/685-restore snapshot study; bounded Linux journal: 4,096 events, 64 reopens, 288 SIGKILL cases, 1,920 bit-flip refusals; independent Python matching/byte oracle.",
     "bullets": [
-      "Built a C++20 price-time-priority matching and deterministic replay engine with partial cancellations and marketable limit orders; historical same-runner benchmark reduced event time from 145.1 ns to 104.1 ns.",
-      "Verified every fill against an independent oracle across 25,000 events; validated 685 snapshot restores across another 25,000 events, corruption/FIFO guards and ASan/UBSan checks."
+      "Built a C++20 price-time-priority matcher; checked every fill against an independent oracle across 25,000 events and 685 snapshot restores across another 25,000 events.",
+      "Added a bounded Linux journal with fsync before acknowledgment; verified 4,096 events, 64 reopens, 288 SIGKILL cases and 1,920 bit-flip refusals. Physical power loss untested."
     ],
-    "limit": "Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service.",
+    "limit": "Synthetic workload; single cooperating Linux writer, trusted stable directory and bounded quantities. SIGKILL retains OS cache; no physical power-loss, exchange/feed or client exactly-once claim. CRC is accidental integrity, not authentication. Whole suffix deletion needs an external high-water mark. Historical timing remains original-runner only.",
     "prior_evidence": [
       {
         "evidence": "25,000 randomized events; 5 seeds; every fill and all 256 order-ID slots checked against an independent vector-based oracle.",
@@ -134,15 +270,44 @@
           "Added independent differential verification across 25,000 randomized events and five seeds, checking fills, prices, quantities and all order-ID slots after each event; passed ASan/UBSan checks."
         ],
         "limit": "Synthetic replay and platform-specific historical benchmark; not live exchange latency or production trading."
+      },
+      {
+        "evidence": "25,000-event independent matching oracle; another 25,000-event recovery study with 685 restores, 1,304 bit-flip/163 truncation refusals; independent portable-format decoder.",
+        "bullets": [
+          "Built a C++20 price-time-priority matching and deterministic replay engine with partial cancellations and marketable limit orders; historical same-runner benchmark reduced event time from 145.1 ns to 104.1 ns.",
+          "Verified every fill against an independent oracle across 25,000 events; validated 685 snapshot restores across another 25,000 events, corruption/FIFO guards and ASan/UBSan checks."
+        ],
+        "limit": "Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service.",
+        "latest_evidence_release": {
+          "date": "2026-10-10",
+          "source_commit": "bd1c9c08505a7382a772f65d993f1b3e40843316",
+          "ci_run_id": 38021343683,
+          "audit_path": "docs/RECOVERY_REVIEW.md",
+          "result_path": "reference/recovery/fixture.hex",
+          "scope": "Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service."
+        }
       }
     ],
     "latest_evidence_release": {
-      "date": "2026-10-10",
-      "source_commit": "bd1c9c08505a7382a772f65d993f1b3e40843316",
-      "ci_run_id": 38021343683,
-      "audit_path": "docs/RECOVERY_REVIEW.md",
-      "result_path": "reference/recovery/fixture.hex",
-      "scope": "Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service."
+      "date": "2026-10-11",
+      "source_commit": "45db49f8c04ad7398e84aca87fcbc4df977951f4",
+      "registration_commit": "0fb303eeee20085f01499d8cb218113929ae9c5f",
+      "quantity_safety_amendment": "e99d8fe6ab723219599af3884ebe9bf6323a4211",
+      "audit_path": "docs/FILESYSTEM_JOURNAL_REVIEW.md",
+      "result_path": "reference/journal/study/summary.json",
+      "scope": "Synthetic workload; single cooperating Linux writer, trusted stable directory and bounded quantities. SIGKILL retains OS cache; no physical power-loss, exchange/feed or client exactly-once claim. CRC is accidental integrity, not authentication. Whole suffix deletion needs an external high-water mark. Historical timing remains original-runner only.",
+      "study_events": 4096,
+      "reopens": 64,
+      "process_crash_cases": 288,
+      "independent_matching_states": 64,
+      "unit_bit_refusals": 1920,
+      "ci_status": "PASS_EXACT_BRANCH_MAIN",
+      "branch_run": 38117665204,
+      "branch_job": 114405715218,
+      "main_journal_run": 38117778531,
+      "main_journal_job": 114406052283,
+      "main_historical_run": 38117778464,
+      "main_historical_job": 114406051727
     }
   },
   {
@@ -150,12 +315,12 @@
     "repo": "urban-mobility-pyspark-optimization",
     "title": "Data Engineering & Decision Optimisation",
     "focus": "Large-scale data processing and constrained optimisation",
-    "evidence": "24.08m-trip PySpark study and independent optimization oracles; later-period 6,003 July zone-days from 3.90m additional raw trips; frozen mean MAE 5.79 versus zero baseline 12.40.",
+    "evidence": "24.08m-trip PySpark/optimization study and 100 correctness cases; registered Aug-Oct 2025 forecast comparison on 17,226 zone-days, 12.25m additional raw trips: boosting MAE 5.4020 vs July-selected weekday baseline 5.6848. Daily operator-feed availability assumed; 21/66 loss days retained.",
     "bullets": [
       "Processed 24.08m NYC taxi trips with PySpark into a complete weekday zone panel; constrained rebalancing reduced proxy vehicle-miles by 3.76% versus a distance-aware greedy baseline.",
-      "Checked 100 transport cases, including 40 exhaustive oracles; validated frozen flow means on 6,003 later-month zone-days: MAE 5.79 versus 12.40 for a zero-flow sanity baseline."
+      "Registered Aug-Oct forecasts on 17,226 zone-days; boosting MAE 5.40 vs 5.68 for a July-selected weekday baseline, under assumed daily data access."
     ],
-    "limit": "Trip flow is not idle supply, centroid distance is a proxy. One later month/zero comparator is not frontier forecasting or realized dispatch savings.",
+    "limit": "Trip flow is not idle supply; centroid distance is a proxy. Daily operator-feed availability is assumed and differs from delayed public TLC releases. Three months in one city/year, conditional fixed-fit intervals, 21/66 loss days and ridge RMSE/activity-group advantages; no realised dispatch savings or frontier-model claim.",
     "prior_evidence": [
       {
         "evidence": "24.08m raw TLC trips; complete zero-inclusive zone panel; 100 offline transport cases including 40 exhaustive oracle comparisons.",
@@ -164,15 +329,36 @@
           "Implemented a dependency-light transport solver and verified 100 cases, including 40 exhaustive small-network comparisons; checked integrality, capacity and quantity conservation."
         ],
         "limit": "TLC trip flow does not observe idle fleet supply; centroid distance is a proxy, and allocation is a static model."
+      },
+      {
+        "evidence": "24.08m-trip PySpark study and independent optimization oracles; later-period 6,003 July zone-days from 3.90m additional raw trips; frozen mean MAE 5.79 versus zero baseline 12.40.",
+        "bullets": [
+          "Processed 24.08m NYC taxi trips with PySpark into a complete weekday zone panel; constrained rebalancing reduced proxy vehicle-miles by 3.76% versus a distance-aware greedy baseline.",
+          "Registered Aug-Oct forecasts on 17,226 zone-days; boosting MAE 5.40 vs 5.68 for a July-selected weekday baseline, under assumed daily data access."
+        ],
+        "limit": "Trip flow is not idle supply, centroid distance is a proxy. One later month/zero comparator is not frontier forecasting or realized dispatch savings.",
+        "latest_evidence_release": {
+          "date": "2026-10-10",
+          "source_commit": "87ff32d9a40fde4bdf948e89b04ec649ba6b758e",
+          "ci_run_id": 38021636353,
+          "audit_path": "docs/FORWARD_PERIOD_REVIEW.md",
+          "result_path": "reference/forward_panel/summary.json",
+          "scope": "Trip flow is not idle supply, centroid distance is a proxy. One later month/zero comparator is not frontier forecasting or realized dispatch savings."
+        }
       }
     ],
     "latest_evidence_release": {
       "date": "2026-10-10",
-      "source_commit": "87ff32d9a40fde4bdf948e89b04ec649ba6b758e",
-      "ci_run_id": 38021636353,
-      "audit_path": "docs/FORWARD_PERIOD_REVIEW.md",
-      "result_path": "reference/forward_panel/summary.json",
-      "scope": "Trip flow is not idle supply, centroid distance is a proxy. One later month/zero comparator is not frontier forecasting or realized dispatch savings."
+      "source_commit": "f5cf5c18e5564c97c4f82cdad6fc76f38d5bad6a",
+      "audit_path": "docs/FORECAST_CHALLENGE_REVIEW.md",
+      "result_path": "reference/forecast_challenge/summary.json",
+      "registration_commit": "43216c7de47c66369fc9fad3e12cf50b202fad33",
+      "selection_commit": "01c5421152194e620f1c6c0d6196f92e288cc75f",
+      "successful_branch_ci_run": 38069511620,
+      "scope": "Trip flow is not idle supply; centroid distance is a proxy. Daily operator-feed availability is assumed and differs from delayed public TLC releases. Three months in one city/year, conditional fixed-fit intervals, 21/66 loss days and ridge RMSE/activity-group advantages; no realised dispatch savings or frontier-model claim.",
+      "successful_main_ci_run": 38069656929,
+      "successful_main_july_ci_run": 38069656917,
+      "successful_main_original_ci_run": 38069656895
     }
   }
 ]

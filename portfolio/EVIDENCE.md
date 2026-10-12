@@ -1,3 +1,5 @@
+**[Current seven-project review](CURRENT_REVIEW.md)** — synchronized with the verified releases through 11 October 2026. Earlier frozen evidence and its dates remain preserved below.
+
 ## Explicit financial-answer reliability — completed October 11, 2026
 
 [Working calculator, full comparison and limits](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c66b99b6cd587dfd73c8876fa2c566ab9c7dd29f/docs/SEMANTIC_CONTRACT_REVIEW.md) · [Registered design](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c40bc357c9a92d87618ab86a16e20f2371f08601/docs/SEMANTIC_CONTRACT_DESIGN.md) · [Every fault-stratum count](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c66b99b6cd587dfd73c8876fa2c566ab9c7dd29f/reference/semantic_contract/SUMMARY.json).
