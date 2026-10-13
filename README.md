@@ -31,7 +31,7 @@ Public-data studies, simulations and synthetic workbook demonstrations are label
 - **M.A. Actuarial Economics**, Madras School of Economics — expected 2028.
 - **B.Sc. Mathematics**, Loyola College — First Class, 2026.
 - **Data Analyst Intern, Picklers Arena**, Dec 2025–Jan 2026 — Excel analysis of six months of booking data using PivotTables, XLOOKUP and operating summaries.
-- **Cultural Secretary**, Loyola Mathematics Department, 2025–26 — student, faculty and sponsor coordination.
+- **Cultural Secretary**, Loyola Mathematics Department, 2025–26.
 - **15+ prizes across 20+ debate/oratory competitions**, including Ministry of Education oration, VIT Chennai parliamentary debate and Stella Maris linear-algebra paper-presentation first prizes in 2025.
 
 **Project tools:** Python, SQL, C++20, Excel, PySpark and GitHub Actions.
