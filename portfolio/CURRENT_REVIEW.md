@@ -17,7 +17,7 @@ The seven flagship comparisons and adverse findings below remain unchanged. Supp
 
 GitHub now detects MIT for the original code in all seven flagship repositories. Source-specific notices, FinQA/MPL terms and upstream data/report/model conditions remain separate; this is not a blanket licence for third-party materials. Supporting studies do not add an eighth flagship. These additions establish source provenance and bounded checks, not independent practitioner endorsement, production readiness or assessed personal mastery.
 
-Evidence through **11 October 2026**; surface reconciliation **12 October 2026**. Exactly seven independently initiated, AI-assisted portfolio projects. Results, assumptions and adverse findings are kept together. Code CI verifies its executed checks; it is not practitioner endorsement, real usage or candidate mastery.
+Evidence through **12 October 2026**; surface reconciliation **12 October 2026**. Exactly seven independently initiated, AI-assisted portfolio projects. Results, assumptions and adverse findings are kept together. Code CI verifies its executed checks; it is not practitioner endorsement, real usage or candidate mastery.
 
 Start with **Financial AI** for source-bound engineering, **Credit** for financial ML and temporal failure analysis, or **Actuarial** for degree-aligned uncertainty. The other four provide causal, derivatives, systems and data/optimisation depth.
 
@@ -100,3 +100,13 @@ Registered four-method comparison on nine historical BTC dates: 1,868 raw option
 [The detailed guide](EVIDENCE.md) retains original evidence and all later additions. The earlier machine snapshot is [preserved unchanged](history/evidence_snapshot_before_2026-10-12_sync.json). Current project identities and citations are in [registry.json](registry.json) and [evidence_snapshot.json](evidence_snapshot.json).
 
 No new study, model generation or refit was performed to synchronize these surfaces.
+
+## Verification update — 14 October 2026
+
+The seven evidence runs linked above were independently re-read as completed
+success on their exact frozen evidence commits, including the actuarial main
+run 38238560106. This is a check of existing executed workflows, not a new study
+or a rerun. The dated 12 October machine snapshot retains its original recording
+of branch-only verification; the current review records the later main evidence.
+Subsequent licence and documentation commits do not change the frozen studies
+or confer independent review, real use or assessed candidate mastery.
