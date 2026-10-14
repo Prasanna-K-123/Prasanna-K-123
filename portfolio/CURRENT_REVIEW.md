@@ -1,5 +1,13 @@
 # Current evidence review — seven fixed projects
 
+## Supporting source addition — 14 October 2026
+
+[Carnival post-transition debt and financial liquidity review](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/blob/f00f77f7a01e7107a3f0f07715a38b3bdbcb9c95/docs/POST_TRANSITION_DEBT_LIQUIDITY_REVIEW.md) now verifies 21 instruments, 63 numeric inline contexts and five combined Obligor Group balance rows. The static cash/conditional-revolver maturity proxy excludes ship-specific undrawn financing and retains negative later-bucket differences. Comparative rounding gaps and the failed initial strict-exact check are disclosed.
+
+The separately registered source-informed method includes 35 added tests and a synthetic 832-case pari-passu arithmetic contract with an exact rational oracle. The full pinned 126-test suite, original references and all four matching-main workflows pass; [source-method replay](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/actions/runs/38545863805).
+
+All 60 pre-existing Git blob identities remain preserved. The original complete Q3 recovery criterion remains failed: actual creditor estates, legal priority, collateral recovery and agreement-defined covenant headroom are refused. The synthetic helper is not an observed issuer recovery or independent practitioner endorsement. This remains supporting research inside the same seven families; the flagship comparisons below are unchanged.
+
 ## Source and code-scope update — 14 October 2026
 
 The seven flagship comparisons and adverse findings below remain unchanged. Supporting financial research now includes original SEC disclosures with frozen source hashes and reproducible checks:

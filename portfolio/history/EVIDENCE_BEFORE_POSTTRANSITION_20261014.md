@@ -1,0 +1,222 @@
+## Source and code-scope update — 14 October 2026
+
+The seven flagship comparisons and adverse findings below remain unchanged. Supporting financial research now includes original SEC disclosures with frozen source hashes and reproducible checks:
+
+- **Carnival:** [original Q1/Q3 source protocol and replay](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/tree/56d43eb147c5d83cc0f8855bbf1adf019c46f7d4/research_sec_quarters). The period-bound financial bridges reconcile. Q3 changed debt and guarantee classifications; the old full recovery-model criterion remains unmet and its unsupported outputs remain null. [Adverse finding](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/blob/56d43eb147c5d83cc0f8855bbf1adf019c46f7d4/research_sec_quarters/ADVERSE_FINDING.md).
+- **Baker Hughes/Chart:** [original-source review](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation/blob/65620f574d2a484dd7bd1eb3075f64d4b971b50d/docs/ORIGINAL_BKR_SOURCE_REVIEW.md). Four original response bodies verify all 20 frozen pro-forma cells. The exhibit distinguishes the **15 July 2026 loan drawdown**, **16 July closing/report date** and **1 October amendment**. The March 31 as-if balance and purchase-price/cash-use reconciliation do not establish an actual post-close balance or a calibrated 2028 valuation. All 62 tests and both matching-main workflows pass; [source replay](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation/actions/runs/38535563399). The original workbook, assumptions and dated bridge are preserved.
+
+GitHub now detects MIT for the original code in all seven flagship repositories. Source-specific notices, FinQA/MPL terms and upstream data/report/model conditions remain separate; this is not a blanket licence for third-party materials. Supporting studies do not add an eighth flagship. These additions establish source provenance and bounded checks, not independent practitioner endorsement, production readiness or assessed personal mastery.
+
+**[Current seven-project review](CURRENT_REVIEW.md)** — synchronized with the verified releases through 12 October 2026. Earlier frozen evidence and its dates remain preserved below.
+
+## Explicit financial-answer reliability — completed October 11, 2026
+
+[Working calculator, full comparison and limits](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c66b99b6cd587dfd73c8876fa2c566ab9c7dd29f/docs/SEMANTIC_CONTRACT_REVIEW.md) · [Registered design](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c40bc357c9a92d87618ab86a16e20f2371f08601/docs/SEMANTIC_CONTRACT_DESIGN.md) · [Every fault-stratum count](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/c66b99b6cd587dfd73c8876fa2c566ab9c7dd29f/reference/semantic_contract/SUMMARY.json).
+
+A typed financial calculator verifies 24 annual Apple/Microsoft source contexts against SEC concept histories and inline XBRL. Exact issuer, concept, observation dates, accession, units and executable operation form the answer contract. In a registered **3,498-case constructed suite**, the strict policy returns all **368 required complete answers** and **3,130 required refusals**, with zero observed escapes or false refusals in this defined suite. Source-addressed arithmetic alone accepts 2,930 invalid cases; using reported numbers accepts 3,101 invalid/wrong answers. The separate non-LLM planner answers all 172 supported explicit requests with provenance.
+
+These are engineered conformance cases, with many variants sharing only 24 source contexts. Proposals are constructed and perturbed, not new neural outputs. This is **not held-out natural-language accuracy, general financial entailment, source authenticity, external review, candidate mastery or production adoption**. The original retrieval, CCL source/calculator, 128/64 neural studies and sparse post-hoc controlled-language results remain byte-preserved, including their adverse findings.
+
+All 114 tests and every source/input/answer/refusal/artifact check pass: [full branch replay](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38134205794), [full main replay](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38134291004), and [main replay of all preserved financial evidence](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38134290939). The registration run correctly skipped stored-result equality before outputs existed. Replay does not regenerate old neural inference.
+
+---
+
+# Seven-project portfolio: evidence guide
+
+**Prasanna K · Quantitative modelling & reliable decision systems · Summer 2027**
+
+This guide links directly to the published results, verification and reproduction evidence. The seven projects stay fixed; a reviewer can enter through the work closest to their role.
+
+| Reviewing for | Start with |
+|---|---|
+| Quantitative risk, financial modelling or validation | 1. Credit risk · 5. Derivatives · 6. C++ engineering |
+| Applied AI, data science or decision systems | 3. Financial AI · 2. Causal decisions · 7. Data engineering |
+| Actuarial analytics or insurance risk | 4. Actuarial models · 1. Credit risk · 2. Causal decisions |
+
+The current extensions below link to frozen source commits and successful remote checks. The earlier October 9 evidence remains linked separately for reproduction. Passing checks establish only their stated contract; they do not prove model quality or production readiness.
+
+## October 12 registered whole-triangle calibration and shift challenge
+
+Project4 adds **6,144 registered synthetic whole triangles** (2,048 calibration and 4,096 separate evaluation), 98,304 reused interval comparisons and an independent audit of every forecast, interval and design. Matched absolute-conformal nominal-95% coverage was **95.12–95.90%** across the four inspected laws. A frozen independent-lognormal calibrator transferred to shared-calendar risk covered only **83.98% (860/1,024)**; exposure-subgroup undercoverage and interval-score/width tradeoffs are retained. This is neither real-insurer validation nor a shift, subgroup or temporal guarantee. Old predictive-reserving evidence, including its failures, is preserved.
+
+[Complete review](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/docs/CONFORMAL_RESERVING_REVIEW.md) · [Frozen protocol](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/73bf40e2fa16cb7bd81fabc04c320abfa87cff2a/reference/conformal_reserving/PROTOCOL.json) · [All results](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/outputs/conformal_reserving/SUMMARY.json) · [Independent audit](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/e0ecf8e930918a462b27143ff0f1a57cb30df087/verify_conformal_reserving.py) · [Matching-SHA branch CI](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/38238315104)
+
+---
+
+## October 11 registered multidate shape comparison
+
+Project5 now compares raw SVI, quadratic variance, convex call prices and joint constrained SSVI on a CC0 December 2018 archive: **nine available dates**, **1,868 raw option rows**, **27 eligible date/expiry groups** and **195 held-out strikes**. One registered date stays missing. Source/schema corrections were documented before inversion or fitting; complete methods and hashes were registered before execution. Held-out outcomes are recorded before full refits.
+
+On **182 common-interior strikes**, mean per-group IV RMSE is **1.84 pp raw SVI**, **2.26 pp quadratic**, **4.24 pp convex call** and **3.98 pp joint SSVI**. Raw SVI has the smallest aggregate error but fails **23/27** wider density and **15/18** wider calendar checks. SSVI meets its idealized sufficient conditions and passes the registered grids with worse fit. Convex calls refuse all **13 boundary predictions** and wider stress requests. Complete failures, refusals, metrics and all dates remain visible; there is no universal winning model.
+
+[Full balanced review](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/3796e204d69267ce68f738fcc18ae983bdf8d32b/docs/MULTIDATE_SHAPE_REVIEW.md) · [Frozen results](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/3796e204d69267ce68f738fcc18ae983bdf8d32b/reference/multidate_shape/results/summary.json) · [Pre-fit methods and amendment](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/c84299c663c09ec4b8889ab947397600df156f1c/docs/MULTIDATE_SCHEMA_AMENDMENT.md) · [Successful full main replay](https://github.com/Prasanna-K-123/volatility-surface-model-risk/actions/runs/38126080439)
+
+All **45 tests** and full local/branch/main reference replay pass; every raw row, inversion, prediction and metric is audited. The original September 2026 calibration, density failures and 27 GBM hedge scenarios stay unchanged. This extension is dependent retrospective convenience data. Venue IV is absent, so prices are inverted under an explicit zero-rate/index/recorded-underlying research convention; **285 eligible rows have mismatched underlying-expiry references**. SSVI's mathematical shape conditions do not validate these market assumptions, tails or executable arbitrage. No forecast, realized PnL, current-market validation or external review is claimed.
+
+## October 11 registered filesystem journal
+
+Project6 now includes a real, bounded Linux journal alongside its unchanged matching engine and in-memory snapshot API. **4,096 synchronized event appends**, **64 reopens** and **288 process-kill cases** matched the fixed contract. An independent Python byte decoder/vector matcher checks all inputs and all64 canonical recovery states. The unit study rejects1,920 bit flips,13 resealed invalid records and three splices;14 I/O scenarios exercise short/EINTR writes/reads, zero writes, ENOSPC and sync/repair errors. All five test targets and default remote ASan/UBSan checks pass.
+
+The pre-execution registration is preserved. A later quantity-bound safety amendment adds explicit numeric refusal tests while retaining all primary outputs byte-identically. File sync precedes acknowledgment; an uncertain I/O poisons the handle. Complete unacknowledged records may reappear. Invalid complete records refuse, while incomplete tails are reported and repaired under the append-only model. CRC is accidental integrity, not authentication. Complete suffix deletion needs an external high-water mark.
+
+[Registered contract and limits](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/45db49f8c04ad7398e84aca87fcbc4df977951f4/docs/FILESYSTEM_JOURNAL_REVIEW.md) · [Frozen study](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/45db49f8c04ad7398e84aca87fcbc4df977951f4/reference/journal/study/summary.json) · [Independent oracle](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/45db49f8c04ad7398e84aca87fcbc4df977951f4/verify_journal.py) · [Successful full branch replay and sanitizer check](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/actions/runs/38117665204)
+
+**Limit:** Single cooperating Linux writer, trusted stable directory and bounded event quantities. SIGKILL leaves the OS cache alive; physical power loss, exchange/feed integration, distributed exactly-once delivery and new latency records are untested. The existing25,000-event matching oracle and separate25,000-event/685-restore image study remain distinct. Earlier dated descriptions below retain their original scope.
+
+## October 10 update: extrapolation challenged
+
+The October 9 snapshot below remains reproducible. Project 5 now also has an [analytic extrapolation audit](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/fd9c3ff268f8c03cf742b580981548ebab06f08f/docs/EXTRAPOLATION_AUDIT.md), [frozen result/protocol](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/fd9c3ff268f8c03cf742b580981548ebab06f08f/reference/density_audit/summary.json) and [successful validation run](https://github.com/Prasanna-K-123/volatility-surface-model-risk/actions/runs/38013024452). Two of six smiles fail a far-outside-support density stress check; the new bounded-evaluation API rejects unsupported extrapolation. The original held-out-strike benchmark includes three boundary-extrapolation points out of 116. These are model-risk findings, not observed executable market arbitrage or a global no-arbitrage proof.
+
+## October 10 substantive extensions
+
+Four existing flagships received new empirical or correctness evidence. The seven project identities remain unchanged.
+
+### 1. Credit Risk & Lending Decisions
+
+A new 30,000-record Taiwan cohort uses identical 18,007-client training budgets, duplicate-input isolation, separate calibration/policy partitions and a 6,001-client holdout. AUCs are 0.7814 and 0.7897; the paired input-group-bootstrap difference interval is [0.0006, 0.0161]. Brier and assumed decision-cost difference intervals include zero. Calibration worsens raw Brier scores in both models, and this finding is retained.
+
+[Review memo](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/f4bb37d2d51625f2fc76c38504072211850c7f83/docs/MATCHED_COHORT_REVIEW.md) · [Frozen result](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/f4bb37d2d51625f2fc76c38504072211850c7f83/reference/card_clients/summary.json) · [Verification code](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/f4bb37d2d51625f2fc76c38504072211850c7f83/benchmark_card_clients.py) · [Successful CI](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/actions/runs/38021071123)
+
+**Limit:** One historical Taiwan cohort and earlier South German study; not out-of-time validation or regulatory PD/ECL. No observed LGD/EAD; decision costs illustrative.
+
+#### Registered temporal institutional-risk extension
+
+A separate official-FDIC study reconstructs **237,253 eligible bank-year observations** from pinned original-source extracts. Development, selection, calibration, policy and final evaluation use separate calendar partitions with purged gaps. Both full models have equal development rows and three candidate trials. The **57,896-row / 35-failure final evaluation** spans 11 annual prediction cohorts.
+
+Calibrated boosting AUC is **0.9155** versus full logistic **0.8381**, with separate paired bank/year intervals. Capital-only logistic has slightly higher pooled AUC; calibration worsens both full models' raw probability scores. Under the frozen monitoring rule, boosting catches 22/35 overall but misses **9/10 failures in the post-hoc 2022–2025 subgroup**. The bank-cluster interval for illustrative cost advantage includes zero. All cases and negative findings remain visible.
+
+[Pre-fit source freeze](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/commit/231a09b18b7648c964a5e2e3bf5e458b8876ee74) · [Protocol, results and limits](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/docs/FDIC_TEMPORAL_REVIEW.md) · [Frozen metrics](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/reference/fdic_temporal/summary.json) · [Every failure](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/reference/fdic_temporal/failure_cases.csv) · [Strict source/fit replay](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/6a2b03af67d4c99bdc1a16542b367a45874b1230/replay_fdic_temporal.py) · [Successful actual replay CI](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/actions/runs/38064856852)
+
+**Limit:** Bank-certificate failure with competing nonfailure exits, using current historical revisions and assumed April 1 availability. This is retrospective temporal evidence, not borrower out-of-time PD or original-vintage performance. No production value or IFRS9 approval is inferred.
+
+### 3. Financial AI Evidence Systems
+
+Qwen3-4B Q4_K_M actually generated all 128 preselected public-test outputs. The same outputs were replayed through a bounded expression/source-occurrence guard; all answers and refusals are retained. Both answer policies remain unreliable. A custom display diagnostic gives 15/122 direct and 22/122 guarded matches, with a paired improvement interval that includes zero; separate rounded execution diagnostics give 9/128 and 26/128. Scale/rounding limits prevent treating these as official FinQA accuracy or human-reviewed semantic correctness. CI replays frozen outputs and scoring; it does not rerun model generation.
+
+[Review memo](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/1a256dfe20a4ac13f29e9bf662459b31da42dd19/docs/ANSWER_AUDIT.md) · [Frozen result](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/1a256dfe20a4ac13f29e9bf662459b31da42dd19/reference/answer_audit/summary.json) · [Verification code](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/1a256dfe20a4ac13f29e9bf662459b31da42dd19/benchmark_answers.py) · [Successful CI](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38021106315)
+
+**Limit:** Calculator has a bounded company/year/metric/unit contract. General FinQA answers remain experimental and unreliable; citation occurrence does not prove semantic entailment.
+
+#### Current source-grounding extension
+
+The explicit historical calculator now requires reconciled provenance: **39 registered rows / 33 distinct concept-period contexts** match SEC companyfacts and inline XBRL from two issuer filings. Original values and capture hashes are preserved; current HTML hashes differ from earlier captures. This is consistency across representations of the same disclosures, not an independent financial audit.
+
+A separate Qwen3-8B pilot generated all **64 fixed questions / 59 pages**, excluding every earlier-audit page. Source-addressed execution gives **16/64 scalar execution-reference matches**, versus **2/64** direct; the strict v1 policy answers only **2/64** and matches **1/64**. Fixed-scorer reference agreement is not verified semantic accuracy. Full report context is supplied, so this does not measure retrieval. All refusals, wrong answers and source/rounding limitations remain visible.
+
+Diagnosed period/formula and measure/unit failures are addressed in a **separate controlled-language v2**. Its full-public-split census is post-hoc development: 24/1,147 answered, 19 display matches and 14 execution matches. It is not a new held-out model score or a dependable general QA service. Full local suite: **85 tests pass**. CI replays retained outputs and data checks; it does not regenerate the neural model.
+
+[Locked protocol, full results and failures](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/docs/GROUNDED_ANSWER_AUDIT.md) · [All 64 raw outputs](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/reference/grounded_answer_audit/outputs.jsonl) · [Exact filing lineage](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/docs/FILING_LINEAGE.md) · [Separate development fixes](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/a0368d045e2b403ca9185b168557eda831922059/docs/CONTROLLED_CONTRACT_V2.md) · [Successful exact-source validation](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/38049135102)
+
+### 6. C++20 Event-Driven Trading Engine
+
+A versioned portable snapshot restores book state, FIFO order, chronology and counters. A separate 25,000-event, five-seed recovery study verifies 685 restores; 1,304 bit flips, 163 truncations and eight resealed invalid structures are rejected. An independent Python format/CRC decoder checks the C++ fixture. The full remote release, sanitizer, replay and performance-regression workflow passed. Historical timing remains tied to its original runner; no new latency figure is claimed.
+
+[Review memo](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/bd1c9c08505a7382a772f65d993f1b3e40843316/docs/RECOVERY_REVIEW.md) · [Frozen result](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/bd1c9c08505a7382a772f65d993f1b3e40843316/reference/recovery/fixture.hex) · [Verification code](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/bd1c9c08505a7382a772f65d993f1b3e40843316/verify_snapshot_fixture.py) · [Successful CI](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/actions/runs/38021343683)
+
+**Limit:** Synthetic replay; historic platform-specific timing. Recovery is an in-memory image API, not a durable exchange journal, live feed or production service.
+
+### 7. Data Engineering & Decision Optimisation
+
+#### Registered seasonal/rolling comparison
+
+A protocol/code freeze and a separate July-selection freeze preceded local collection of **August-October 2025**. July is explicitly inspected development data here. Eight simple baselines and six equal-budget ridge/boosting candidates were registered; only the selected configurations were refit once and evaluated. **17,226 zone-days / 66 weekdays** from 12.25m additional raw trips retain every zero-activity row and holiday.
+
+Boosting MAE is **5.4020 versus 5.6848** for the July-selected weekday baseline: 4.97% lower pooled error. The paired week interval is [-0.4846, -0.1325] over 14 clusters; the separate paired zone interval is [-0.5432, -0.0920] over 261 zones. Both are fixed-fit conditional sensitivity intervals, not joint spatial/time, refit or selection uncertainty. Boosting loses on **21/66 days**. Ridge has lower pooled RMSE, lower August MAE and lower high-activity-zone MAE; those counterexamples remain visible.
+
+[Review and every comparator](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/f5cf5c18e5564c97c4f82cdad6fc76f38d5bad6a/docs/FORECAST_CHALLENGE_REVIEW.md) · [Protocol freeze](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/commit/43216c7de47c66369fc9fad3e12cf50b202fad33) · [Selection freeze](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/commit/01c5421152194e620f1c6c0d6196f92e288cc75f) · [Frozen results](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/f5cf5c18e5564c97c4f82cdad6fc76f38d5bad6a/reference/forecast_challenge/summary.json) · [Every daily result](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/f5cf5c18e5564c97c4f82cdad6fc76f38d5bad6a/reference/forecast_challenge/daily_metrics.csv) · [Raw/refit verification](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/f5cf5c18e5564c97c4f82cdad6fc76f38d5bad6a/verify_forecast_challenge.py) · [Successful main replay](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/actions/runs/38069656929)
+
+**Limit:** Rolling history assumes a daily operator feed. TLC's monthly public files typically arrive with a two-month delay and do not supply it; original-vintage/public-release-feasible forecasting is unverified. One city/type/year and three contiguous months limit generalisation. Trip flow is not idle supply; centroid distance is a proxy. No live dispatch or realised saving is established. The original static optimisation evidence below remains separate.
+
+#### Preserved earlier July-only release
+
+Jan-June flow means were frozen before processing July. July contributes 3,898,963 raw / 3,676,278 cleaned trips and 6,003 zero-inclusive zone-days. The frozen mean has MAE 5.79 versus 12.40 for a zero-flow sanity comparator; paired week-block interval [-7.75, -4.96] uses only five blocks. Complete-panel replay and pinned raw reconstruction passed remotely. This earlier result is unchanged and now supplies inspected development/context for the stronger comparison above.
+
+[Earlier review](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/87ff32d9a40fde4bdf948e89b04ec649ba6b758e/docs/FORWARD_PERIOD_REVIEW.md) · [Earlier result](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/87ff32d9a40fde4bdf948e89b04ec649ba6b758e/reference/forward_panel/summary.json) · [Earlier successful CI](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/actions/runs/38021636353)
+
+### 2. Causal Decision Science — refit and selection challenged
+
+The original fixed-model +0.946 pp visit-gain estimate is reproduced exactly. Repeating the two-family validation choice and final refit in **256 paired customer draws**, at the same 30% budget, yields visit-gain 2.5th/97.5th percentiles **[-0.252, +1.262] pp**, median **+0.630 pp**, with **16/256** nonpositive draws. Logistic is chosen 143 times and boosting 113. Spend-gain percentiles **[-$0.279, +$0.172]** span zero; no revenue/profit advantage is validated.
+
+[Complete methods/comparison](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/docs/REFIT_UNCERTAINTY_REVIEW.md) · [Registered protocol](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/reference/refit_uncertainty/PROTOCOL.json) · [All 256 records](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/reference/refit_uncertainty/replicates.csv) · [Summary and Monte Carlo precision](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/b8ca8fb0afe7538f882570b92f8286c156118197/reference/refit_uncertainty/summary.json) · [Successful exact-head replay](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/actions/runs/38073180587)
+
+The source remains **64,000** records from the inspected 2008 experiment with fixed **38,400/12,800/12,800** roles. Customer resampling retains the three randomized arm counts and whole records; duplicates are kept without a usable customer identifier. Every candidate choice uses validation visits; evaluation never selects a model, budget or feature. A registered known-design 50:50 email-mixture value check also crosses zero. Median target-set Jaccard against the original policy is **0.527**, showing substantial policy instability.
+
+**Interpretation:** Empirical sensitivity ranges condition on this experiment, fixed split, candidate menu, algorithm seed and independent-customer assumption. Coverage after discontinuous selection is not established; this is not a new untouched trial or an individual treatment-effect estimate. New campaign confirmation and treatment-specific learning remain open. Do not replace the full range with a more favourable conditional-only interval.
+
+**Reproduction:** 21 tests plus pinned-source reconstruction, all 256 policy/draw metrics, all 4,096 conditional draws and registered refit IDs 0/85/170/255 pass locally and in exact-head CI. Only four full refits are replayed in CI; the study itself ran all 256. Cross-hardware score byte hashes can differ; registered policy memberships match exactly and numerical metric tolerances pass. Historical fixed-model results below remain preserved.
+
+### 4. Actuarial Risk Modelling - predictive uncertainty challenged
+
+The [registered predictive review](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/d85f40f755d85c79192ca0431adbab6652eba44b/docs/PREDICTIVE_UNCERTAINTY_REVIEW.md), [complete summary](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/d85f40f755d85c79192ca0431adbab6652eba44b/outputs/predictive_reserving/summary.json), [all calibration cases](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/d85f40f755d85c79192ca0431adbab6652eba44b/outputs/predictive_reserving/calibration_cases.csv) and [coverage figure](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/d85f40f755d85c79192ca0431adbab6652eba44b/outputs/predictive_reserving/predictive_coverage.png) extend the same actuarial family. The original nine Mack standard-error references, 55-cell RAA benchmark, 22 inspected predictions and Excel/Python benefits workbook remain intact.
+
+Six public benchmark measures (five files, including two measures of one USAA source) provide **123 retrospective later-diagonal cells** and **23 eligible diagonal sums**. Nominal 95% moment intervals cover **8/26 ABC cells**, **12/22 USAA incurred cells**, and **0/4 USAA paid eligible diagonal sums**, despite lower point-forecast MAE than no development. These dependent public counts do not measure final-reserve or industry-wide coverage.
+
+All **1,024 fixed simulation cases** compare four predictive approximations and stress calendar assumptions. Under simulated shared calendar risk, nominal 95% coverage is only **203-214/256 (79.3-83.6%)**; a future calendar shock also reduces coverage. One numerical-zero gamma training case fails all four methods and remains uncovered in the denominator. Negative reserve projections and numerical gamma zeros are retained. Shared-factor simulation is an explicit moment heuristic, not a validated bootstrap, posterior, regulatory-capital model or client valuation; dispersion and empirical-tail uncertainty remain open.
+
+**37 tests** pass. Exact-main [predictive replay](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/38102932710) checks pinned sources, every public projection and stored score, all 1,024 generated designs and **16 fixed case replays**. The [benefits workflow](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/38102932706) independently rebuilds and recalculates the original workbook. The original study executed 1,024 cases; CI refits 16, not all 1,024. Dependency and numerical failure-handling amendments are documented rather than hidden as a pristine first attempt. Initial registration/source lineage and seven already completed public output files remain preserved.
+
+## Earlier frozen evidence
+
+## 1. [Credit Risk & Lending Decisions](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing)
+
+AUC difference 0.023; paired 95% interval −0.014 to 0.061. The challenger is not established as superior. Frozen lending policy and prior-shift assumptions are auditable.
+
+[Results](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/9829cfa2cfb157a862725bfb761b3841d30bfc4f/outputs/decision_audit/summary.json) · [Verification](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/9829cfa2cfb157a862725bfb761b3841d30bfc4f/audit_reference.py) · [Successful CI](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/actions/runs/37966462945) · [Reproduction workflow](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/9829cfa2cfb157a862725bfb761b3841d30bfc4f/.github/workflows/ci.yml) · [Scope review](https://github.com/Prasanna-K-123/credit-risk-ifrs9-stress-testing/blob/9829cfa2cfb157a862725bfb761b3841d30bfc4f/docs/EVIDENCE_REVIEW.md)
+
+**Limit:** Small historical oversampled dataset, no observation dates; IFRS 9/LGD/EAD assumptions are illustrative.
+
+## 2. [Causal Decision Science](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift)
+
+Same-budget targeting gain 0.946 percentage points; conditional 95% interval 0.333–1.561 points. The negative spend-targeting finding remains visible.
+
+[Results](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/96e8b7c497c82dc6c2f6c458c20e7060c47f696e/results/same_budget_policy_audit.json) · [Verification](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/96e8b7c497c82dc6c2f6c458c20e7060c47f696e/audit_policy.py) · [Successful CI](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/actions/runs/37966591692) · [Reproduction workflow](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/96e8b7c497c82dc6c2f6c458c20e7060c47f696e/.github/workflows/reproduce-evidence.yml) · [Scope review](https://github.com/Prasanna-K-123/causal-marketing-experimentation-uplift/blob/96e8b7c497c82dc6c2f6c458c20e7060c47f696e/docs/EVIDENCE_REVIEW.md)
+
+**Limit:** Public retrospective evaluation; uncertainty is conditional on the fitted ranking. No profit or individual-treatment-effect claim.
+
+## 3. [Financial AI Evidence Systems](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai)
+
+Across 883 FinQA development questions, TF-IDF recovered all labelled evidence at three for 61.38%; BM25 reached 57.98% and RRF 58.89%. Numerical controls separately cover 33 reconciliations and seven unsupported-request cases.
+
+[Results](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/88227013ccb1459b57366f2d8d21eea7ed57771a/results/finqa_retrieval/summary.json) · [Verification](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/88227013ccb1459b57366f2d8d21eea7ed57771a/benchmark_finqa_retrieval.py) · [Successful CI](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/actions/runs/37966606959) · [Reproduction workflow](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/88227013ccb1459b57366f2d8d21eea7ed57771a/.github/workflows/evidence-validation.yml) · [Scope review](https://github.com/Prasanna-K-123/enterprise-genai-rag-responsible-ai/blob/88227013ccb1459b57366f2d8d21eea7ed57771a/docs/EVIDENCE_REVIEW.md)
+
+**Limit:** FinQA evaluation measures within-report retrieval, not end-to-end answer accuracy. The original small-model RAG study remains separately documented.
+
+## 4. [Actuarial Risk Modelling](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics)
+
+Nine published rounded Mack standard errors reconcile within one unit. On 22 later-diagonal forecasts, MAE is 1,885.21 versus 3,425.45 for no development. The benefits workbook and reserving benchmark use different data.
+
+[Results](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/f5ddbc1093e23e5cfb973a92ca77d527a9d6f2a4/outputs/stochastic_reserving/summary.json) · [Verification](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/f5ddbc1093e23e5cfb973a92ca77d527a9d6f2a4/src/stochastic_reserving.py) · [Successful CI](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/actions/runs/37966483129) · [Reproduction workflow](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/f5ddbc1093e23e5cfb973a92ca77d527a9d6f2a4/.github/workflows/employee-benefits-actuarial-ci.yml) · [Scope review](https://github.com/Prasanna-K-123/employee-benefits-actuarial-analytics/blob/f5ddbc1093e23e5cfb973a92ca77d527a9d6f2a4/docs/EVIDENCE_REVIEW.md)
+
+**Limit:** RAA is a historical reinsurance benchmark, not health-client data. Benefits valuation uses synthetic proxies and is not an IAS 19/ASC 715 valuation.
+
+## 5. [Derivatives & Hedging Model Risk](https://github.com/Prasanna-K-123/volatility-surface-model-risk)
+
+466 filtered option observations across six expiries support held-out-strike prediction comparisons. The hedge extension covers 27 cost/frequency/volatility scenarios on 3,000 common simulated paths, including terminal liquidation costs.
+
+[Results](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/328bef7988905d5329523fce2c501c0c4ae85261/reference/cost_aware_hedging/scenarios.csv) · [Verification](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/328bef7988905d5329523fce2c501c0c4ae85261/verify_reference.py) · [Successful CI](https://github.com/Prasanna-K-123/volatility-surface-model-risk/actions/runs/37966502252) · [Reproduction workflow](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/328bef7988905d5329523fce2c501c0c4ae85261/.github/workflows/validation.yml) · [Scope review](https://github.com/Prasanna-K-123/volatility-surface-model-risk/blob/328bef7988905d5329523fce2c501c0c4ae85261/docs/EVIDENCE_REVIEW.md)
+
+**Limit:** One historical crypto-option snapshot and controlled GBM simulation; no global arbitrage-free or profitable-trading claim.
+
+## 6. [C++20 Event-Driven Trading Engine](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine)
+
+A separate vector-based matcher checks 25,000 randomized events across five seeds, every fill and all 256 order-ID slots after each event. Historical timing claims retain their machine and workload identity.
+
+[Results](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/9dcc7a5b9418c78472454ba54340715da1d3a279/reference/performance_validation.json) · [Verification](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/9dcc7a5b9418c78472454ba54340715da1d3a279/tests/test_differential.cpp) · [Successful CI](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/actions/runs/37966512460) · [Reproduction workflow](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/9dcc7a5b9418c78472454ba54340715da1d3a279/.github/workflows/validation.yml) · [Scope review](https://github.com/Prasanna-K-123/cpp-event-driven-trading-engine/blob/9dcc7a5b9418c78472454ba54340715da1d3a279/docs/EVIDENCE_REVIEW.md)
+
+**Limit:** Synthetic replay and platform-specific historical benchmark; not live exchange latency or production trading.
+
+## 7. [Data Engineering & Decision Optimisation](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization)
+
+24.08 million raw taxi trips were reprocessed into a complete zone panel. Modelled proxy vehicle-miles fell 3.76% versus a distance-aware greedy baseline. The transport core has 100 offline correctness cases, including 40 exhaustive comparisons.
+
+[Results](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/9260ef04775a5a9e4311f06453c40de4c6c9d636/results/project5_metrics.csv) · [Verification](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/9260ef04775a5a9e4311f06453c40de4c6c9d636/results/transport_verification.json) · [Successful CI](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/actions/runs/37963818458) · [Reproduction workflow](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/9260ef04775a5a9e4311f06453c40de4c6c9d636/.github/workflows/reproduce-tlc.yml) · [Scope review](https://github.com/Prasanna-K-123/urban-mobility-pyspark-optimization/blob/9260ef04775a5a9e4311f06453c40de4c6c9d636/docs/EVIDENCE_REVIEW.md)
+
+**Limit:** TLC trip flow does not observe idle fleet supply; centroid distance is a proxy, and allocation is a static model.
+
+## Provenance and contact
+
+These are independent portfolio projects developed with AI assistance. Public-data studies, controlled simulations and synthetic demonstrations are labelled separately. Negative and inconclusive findings remain part of the evidence. They are not client engagements, production deployments, third-party endorsements or peer-reviewed publications.
+
+[Profile](https://github.com/Prasanna-K-123) · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/) · prasannak0911@gmail.com
+
+
