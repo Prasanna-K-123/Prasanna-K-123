@@ -36,6 +36,6 @@ Public-data studies, simulations and synthetic workbook demonstrations are label
 
 **Project tools:** Python, SQL, C++20, Excel, PySpark and GitHub Actions.
 
-**Contact:** ae26prasanna@mse.ac.in · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/)
+**Contact:** prasannak0911@gmail.com · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/)
 
 

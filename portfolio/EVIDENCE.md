@@ -1,3 +1,12 @@
+## Source and code-scope update — 14 October 2026
+
+The seven flagship comparisons and adverse findings below remain unchanged. Supporting financial research now includes original SEC disclosures with frozen source hashes and reproducible checks:
+
+- **Carnival:** [original Q1/Q3 source protocol and replay](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/tree/56d43eb147c5d83cc0f8855bbf1adf019c46f7d4/research_sec_quarters). The period-bound financial bridges reconcile. Q3 changed debt and guarantee classifications; the old full recovery-model criterion remains unmet and its unsupported outputs remain null. [Adverse finding](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/blob/56d43eb147c5d83cc0f8855bbf1adf019c46f7d4/research_sec_quarters/ADVERSE_FINDING.md).
+- **Baker Hughes/Chart:** [original-source review](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation/blob/65620f574d2a484dd7bd1eb3075f64d4b971b50d/docs/ORIGINAL_BKR_SOURCE_REVIEW.md). Four original response bodies verify all 20 frozen pro-forma cells. The exhibit distinguishes the **15 July 2026 loan drawdown**, **16 July closing/report date** and **1 October amendment**. The March 31 as-if balance and purchase-price/cash-use reconciliation do not establish an actual post-close balance or a calibrated 2028 valuation. All 62 tests and both matching-main workflows pass; [source replay](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation/actions/runs/38535563399). The original workbook, assumptions and dated bridge are preserved.
+
+GitHub now detects MIT for the original code in all seven flagship repositories. Source-specific notices, FinQA/MPL terms and upstream data/report/model conditions remain separate; this is not a blanket licence for third-party materials. Supporting studies do not add an eighth flagship. These additions establish source provenance and bounded checks, not independent practitioner endorsement, production readiness or assessed personal mastery.
+
 **[Current seven-project review](CURRENT_REVIEW.md)** — synchronized with the verified releases through 12 October 2026. Earlier frozen evidence and its dates remain preserved below.
 
 ## Explicit financial-answer reliability — completed October 11, 2026
@@ -208,6 +217,6 @@ A separate vector-based matcher checks 25,000 randomized events across five seed
 
 These are independent portfolio projects developed with AI assistance. Public-data studies, controlled simulations and synthetic demonstrations are labelled separately. Negative and inconclusive findings remain part of the evidence. They are not client engagements, production deployments, third-party endorsements or peer-reviewed publications.
 
-[Profile](https://github.com/Prasanna-K-123) · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/) · ae26prasanna@mse.ac.in
+[Profile](https://github.com/Prasanna-K-123) · [LinkedIn](https://www.linkedin.com/in/prasanna-k-964716384/) · prasannak0911@gmail.com
 
 

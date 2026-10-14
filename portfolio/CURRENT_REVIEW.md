@@ -1,5 +1,14 @@
 # Current evidence review — seven fixed projects
 
+## Source and code-scope update — 14 October 2026
+
+The seven flagship comparisons and adverse findings below remain unchanged. Supporting financial research now includes original SEC disclosures with frozen source hashes and reproducible checks:
+
+- **Carnival:** [original Q1/Q3 source protocol and replay](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/tree/56d43eb147c5d83cc0f8855bbf1adf019c46f7d4/research_sec_quarters). The period-bound financial bridges reconcile. Q3 changed debt and guarantee classifications; the old full recovery-model criterion remains unmet and its unsupported outputs remain null. [Adverse finding](https://github.com/Prasanna-K-123/leveraged-credit-underwriting/blob/56d43eb147c5d83cc0f8855bbf1adf019c46f7d4/research_sec_quarters/ADVERSE_FINDING.md).
+- **Baker Hughes/Chart:** [original-source review](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation/blob/65620f574d2a484dd7bd1eb3075f64d4b971b50d/docs/ORIGINAL_BKR_SOURCE_REVIEW.md). Four original response bodies verify all 20 frozen pro-forma cells. The exhibit distinguishes the **15 July 2026 loan drawdown**, **16 July closing/report date** and **1 October amendment**. The March 31 as-if balance and purchase-price/cash-use reconciliation do not establish an actual post-close balance or a calibrated 2028 valuation. All 62 tests and both matching-main workflows pass; [source replay](https://github.com/Prasanna-K-123/baker-hughes-chart-ma-valuation/actions/runs/38535563399). The original workbook, assumptions and dated bridge are preserved.
+
+GitHub now detects MIT for the original code in all seven flagship repositories. Source-specific notices, FinQA/MPL terms and upstream data/report/model conditions remain separate; this is not a blanket licence for third-party materials. Supporting studies do not add an eighth flagship. These additions establish source provenance and bounded checks, not independent practitioner endorsement, production readiness or assessed personal mastery.
+
 Evidence through **11 October 2026**; surface reconciliation **12 October 2026**. Exactly seven independently initiated, AI-assisted portfolio projects. Results, assumptions and adverse findings are kept together. Code CI verifies its executed checks; it is not practitioner endorsement, real usage or candidate mastery.
 
 Start with **Financial AI** for source-bound engineering, **Credit** for financial ML and temporal failure analysis, or **Actuarial** for degree-aligned uncertainty. The other four provide causal, derivatives, systems and data/optimisation depth.
